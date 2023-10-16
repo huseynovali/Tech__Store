@@ -1,10 +1,10 @@
 import React from "react";
-import Component from "../assets/Component";
+import Container from "../Container";
 import ShopInfo from "./ShopInfo";
 
 function TopInfo() {
   return (
-    <Component color={"#020202"}>
+    <Container color={"#020202"}>
       <div className="py-2 w-full flex justify-between items-center ">
         <div className="relative">
           <ShopInfo />
@@ -44,7 +44,7 @@ function TopInfo() {
           </a>
         </div>
       </div>
-    </Component>
+    </Container>
   );
 }
 

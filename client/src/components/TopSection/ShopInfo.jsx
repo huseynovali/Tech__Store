@@ -5,9 +5,10 @@ import { Fragment, useEffect, useRef, useState } from "react";
 function ShopInfo() {
   return (
     <Popover className="relative">
-      {({ open }) => (
-        <>
-          <Popover.Button className={`text-white border-0 outline-none flex items-center text-xs`}>
+      {({ open,close }) => (
+      
+        <> 
+          <Popover.Button className={`text-white border-0 outline-none flex items-center text-xs`} onMouseEnter={()=>setOpen(true)}>
             <span className="text-[#A2A6B0] pr-1">Mon-Thu:</span> 9:00 AM - 5:30 PM
             <svg
               width="16"
@@ -33,7 +34,7 @@ function ShopInfo() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute  z-10 mt-3 w-screen max-w-[260px]  transform ">
+            <Popover.Panel className="absolute  z-10 mt-3 w-screen max-w-[260px]  transform  bg-white">
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="We__are__open flex p-2">
                   <div>
