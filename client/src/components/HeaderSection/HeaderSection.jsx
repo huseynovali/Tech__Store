@@ -4,6 +4,7 @@ import Button from "../Buttons/Button";
 import { navbarLinks } from "../../utils/menulinks";
 import CardHoverSection from "./CardHoverSection";
 import cardComp from "../../utils/const";
+import AccoundHoverSection from "./AccoundHoverSection";
 function HeaderSection() {
   return (
     <Container color={"#fff"}>
@@ -53,7 +54,9 @@ function HeaderSection() {
           </div>
           {/* Card */}
           <div className="card__section ml-6 mr-9 group  relative ">
-             <div className="notification w-4 h-4 bg-[#0156FF] rounded-full text-white text-[10px] flex justify-center items-center absolute -right-1 -top-1 z-10">{cardComp.length}</div>
+            <div className="notification w-4 h-4 bg-[#0156FF] rounded-full text-white text-[10px] flex justify-center items-center absolute -right-1 -top-1 z-10">
+              {cardComp.length}
+            </div>
             <div className="hover:scale-105">
               <svg width="25" height="25" viewBox="0 0 25 25">
                 <path
@@ -68,8 +71,13 @@ function HeaderSection() {
             </div>
           </div>
           {/* Accound */}
-          <div className="accound__section rounded-full w-9 h-9 bg-slate-400">
-            <img src="" alt="" />
+          <div className="accound__section rounded-full w-9 h-9 bg-slate-400 group relative">
+            <div className="hidden absolute  group-hover:block right-[10%] border bg-white top-[42px]">
+              <div className="Triangle w-[20px] h-[20px] absolute border  bg-white rotate-[45deg] right-2 -top-1 -z-[0]">
+                <div className="cover w-[28px] h-[28px] absolute rotate-[45deg]   left-[1.2px]  bg-white"></div>
+              </div>
+              <AccoundHoverSection />
+            </div>
           </div>
         </div>
       </div>
