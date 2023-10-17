@@ -1,28 +1,19 @@
 import React from "react";
-import { Menu, Popover, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 
 function ShopInfo() {
   return (
     <Popover className="relative">
-      {({ open,close }) => (
-      
-        <> 
-          <Popover.Button className={`text-white border-0 outline-none flex items-center text-xs`} onMouseEnter={()=>setOpen(true)}>
-            <span className="text-[#A2A6B0] pr-1">Mon-Thu:</span> 9:00 AM - 5:30 PM
-            <svg
-              width="16"
-              height="15"
-              viewBox="0 0 16 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 5.76929L8 7.76929L6 5.76929"
-                stroke="white"
-                stroke-width="1.6"
-                stroke-linecap="round"
-              />
+      {({ open }) => (
+        <>
+          <Popover.Button
+            className={`text-white border-0 outline-none flex items-center text-xs`}
+          >
+            <span className="text-[#A2A6B0] pr-1">Mon-Thu:</span> 9:00 AM - 5:30
+            PM
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none">
+              <path d="M10 5.76929L8 7.76929L6 5.76929" />
             </svg>
           </Popover.Button>
           <Transition
@@ -34,23 +25,14 @@ function ShopInfo() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute  z-10 mt-3 w-screen max-w-[260px]  transform  bg-white">
+            <Popover.Panel className="absolute  z-10 mt-3 w-screen max-w-[260px]  transform  bg-white ">
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="We__are__open flex p-2">
                   <div>
                     <svg width="35" height="35" viewBox="0 0 35 38" fill="#fff">
                       <g filter="url(#filter0_d_121_49469)">
-                        <path
-                          d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z"
-                          stroke="#0156FF"
-                          stroke-width="2.3"
-                        />
-                        <path
-                          d="M17.5 12.25V18.375H23.625"
-                          stroke="#0156FF"
-                          stroke-width="2.3"
-                          stroke-linecap="round"
-                        />
+                        <path d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z" />
+                        <path d="M17.5 12.25V18.375H23.625" fill="#0156FF" />
                       </g>
                     </svg>
                   </div>
