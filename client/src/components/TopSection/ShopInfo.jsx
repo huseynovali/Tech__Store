@@ -13,7 +13,12 @@ function ShopInfo() {
             <span className="text-[#A2A6B0] pr-1">Mon-Thu:</span> 9:00 AM - 5:30
             PM
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none">
-              <path d="M10 5.76929L8 7.76929L6 5.76929" />
+              <path
+                d="M10 5.76929L8 7.76929L6 5.76929"
+                stroke="white"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+              />
             </svg>
           </Popover.Button>
           <Transition
@@ -31,8 +36,8 @@ function ShopInfo() {
                   <div>
                     <svg width="35" height="35" viewBox="0 0 35 38" fill="#fff">
                       <g filter="url(#filter0_d_121_49469)">
-                        <path d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z" />
-                        <path d="M17.5 12.25V18.375H23.625" fill="#0156FF" />
+                        <path d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z" stroke="#0156FF" strokeWidth="2.3"/>
+                        <path d="M17.5 12.25V18.375H23.625" fill="#0156FF"  strokeWidth="2.3" strokeLinecap="round"/>
                       </g>
                     </svg>
                   </div>
