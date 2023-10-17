@@ -3,6 +3,7 @@ import Container from "../Container";
 import Button from "../Buttons/Button";
 import { navbarLinks } from "../../utils/menulinks";
 import CardHoverSection from "./CardHoverSection";
+import cardComp from "../../utils/const";
 function HeaderSection() {
   return (
     <Container color={"#fff"}>
@@ -51,8 +52,8 @@ function HeaderSection() {
             </svg>
           </div>
           {/* Card */}
-          <div className="card__section pl-6 pr-9 group  relative ">
-            
+          <div className="card__section ml-6 mr-9 group  relative ">
+             <div className="notification w-4 h-4 bg-[#0156FF] rounded-full text-white text-[10px] flex justify-center items-center absolute -right-1 -top-1 z-10">{cardComp.length}</div>
             <div className="hover:scale-105">
               <svg width="25" height="25" viewBox="0 0 25 25">
                 <path
