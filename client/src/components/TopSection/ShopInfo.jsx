@@ -8,7 +8,7 @@ function ShopInfo() {
       {({ open }) => (
         <>
           <Popover.Button
-            className={`text-white border-0 outline-none flex items-center text-xs`}
+            className={`text-white border-0 outline-none flex items-center text-xs relative left-[50%] lg:left-0`}
           >
             <span className="text-[#A2A6B0] pr-1">Mon-Thu:</span> 9:00 AM - 5:30
             PM
@@ -30,14 +30,23 @@ function ShopInfo() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute  z-10 mt-3 w-screen max-w-[260px]  transform  bg-white ">
+            <Popover.Panel className="absolute  z-10  mt-1 lg:mt-3  w-screen lg:max-w-[260px]  transform  bg-white  -left-3">
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="We__are__open flex p-2">
                   <div>
                     <svg width="35" height="35" viewBox="0 0 35 38" fill="#fff">
                       <g filter="url(#filter0_d_121_49469)">
-                        <path d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z" stroke="#0156FF" strokeWidth="2.3"/>
-                        <path d="M17.5 12.25V18.375H23.625" fill="#0156FF"  strokeWidth="2.3" strokeLinecap="round"/>
+                        <path
+                          d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z"
+                          stroke="#0156FF"
+                          strokeWidth="2.3"
+                        />
+                        <path
+                          d="M17.5 12.25V18.375H23.625"
+                          fill="#0156FF"
+                          strokeWidth="2.3"
+                          strokeLinecap="round"
+                        />
                       </g>
                     </svg>
                   </div>

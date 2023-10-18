@@ -6,7 +6,7 @@ function TopInfo() {
   return (
     <Container color={"#020202"}>
       <div className="py-2 w-full flex justify-between items-center ">
-        <div className="relative">
+        <div className="relative ">
           <ShopInfo />
         </div>
 
