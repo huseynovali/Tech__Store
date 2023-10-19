@@ -3,7 +3,7 @@ import MobileAccoundPopover from "./MobileAccoundPopover";
 
 function MobileHeader() {
   return (
-    <div className="relative flex py-3">
+    <div className="relative flex py-3 w-full">
       <div className="logo absolute -top-7 bg-[#0156FF] w-16 h-9 rounded-t-full flex justify-center -z-1">
         <svg
           width="46"
@@ -19,7 +19,7 @@ function MobileHeader() {
         </svg>
       </div>
 
-      <div className="header__components flex items-center">
+      <div className="header__components flex items-center w-full">
         <div className="menu__bar ">
           <svg
             width="26"
@@ -48,7 +48,7 @@ function MobileHeader() {
             />
           </svg>
         </div>
-        <div className="search__group bg-white rounded-[25px] flex items-center ml-2 px-4">
+        <div className="search__group bg-white rounded-[25px] flex items-center ml-2 px-4 w-full">
           <svg
             width="16"
             height="16"

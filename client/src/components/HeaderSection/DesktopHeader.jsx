@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../Buttons/Button";
-import { navbarLinks } from "../../utils/menulinks";
 import CardHoverSection from "./CardHoverSection";
-import cardComp from "../../utils/const";
+import {cardComp} from "../../utils/const";
 import AccoundHoverSection from "./AccoundHoverSection";
 import SearchComponent from "./SearchComponent";
+import DesktopHeaderLinks from "./DesktopHeaderLinks";
 function DesktopHeader() {
   return (
     <div>
@@ -27,15 +27,7 @@ function DesktopHeader() {
 
         {/* Navbar links */}
         <div className="nav__links flex items-center">
-          {navbarLinks.map((item, index) => (
-            <a
-              key={index}
-              href="#"
-              className="px-[12.5px] text-[14px] font-semibold "
-            >
-              {item.title}
-            </a>
-          ))}
+          <DesktopHeaderLinks/>
           <Button className=" text-[#0156FF] border-2 border-[#0156FF] py-2 px-7 rounded-[50px] hover:bg-[#0156FF] hover:text-white transition-colors ml-[12.5px]">
             Our Deals
           </Button>
