@@ -1,109 +1,28 @@
 import React from "react";
 import { compCategory, popComp } from "../../utils/const";
+import NestedLiElement from "./NestedLiElement";
 
 function DesktopHeaderLinks() {
   return (
     <div>
       <ul className="flex items-center">
         <li className="group relative">
-          <a href="#" className="px-[12.5px] text-[14px] font-semibold hover:bg-[#0156FF] hover:text-white rounded-2xl p-2 focus:bg-[#0156FF] focus:text-white ">
+          <a
+            href="#"
+            className="px-[12.5px] text-[14px] font-semibold hover:bg-[#0156FF]  hover:text-white rounded-2xl p-2 focus:bg-[#0156FF] focus:text-white "
+          >
             Laptops
           </a>
-          <div className=" bg-white border hidden group-hover:block absolute shadow-lg mt-2 ">
+          <div className=" bg-white border hidden group-hover:block absolute shadow-lg mt-1 -left-[100%] ">
             <div className="top flex">
-                {/*top left */}
+              {/*top left */}
               <div className="left  border-0 border-r-2 border-[#CACDD8] min-w-[350px] ">
-                <ul>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      Everyday Use Notebooks
-                      <svg
-                        width="4"
-                        height="7"
-                        viewBox="0 0 4 7"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.845703 1L2.8457 3.13407L0.845704 5.26814"
-                          stroke="black"
-                          stroke-width="1.6"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      MSI Workstation Series
-                      <svg
-                        width="4"
-                        height="7"
-                        viewBox="0 0 4 7"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.845703 1L2.8457 3.13407L0.845704 5.26814"
-                          stroke="black"
-                          stroke-width="1.6"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      MSI Prestige Series
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      Gaming Notebooks
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      Tablets And Pads
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      Netbooks
-                    </a>
-                  </li>
-                  <li className="py-2 px-7 ">
-                    <a
-                      href="#"
-                      className="flex items-center justify-between text-sm font-semibold"
-                    >
-                      Infinity Gaming Notebooks
-                    </a>
-                  </li>
-                </ul>
+                <NestedLiElement />
               </div>
               {/* top right */}
-              <div className="right flex p-5">
+              <div className="right flex py-5 px-11 gap-5">
                 {popComp.map((item, index) => (
-                  <div key={index} className="px-5">
+                  <div key={index} className="px-6">
                     <div className="stock__checker p-2">
                       {item.inStock ? (
                         <svg
@@ -201,21 +120,27 @@ function DesktopHeaderLinks() {
                       <p className="text-xs">{item.text}</p>
                     </div>
                     <div className="price__info">
-                        <span className="line-through text-[#666666] font-semibold text-sm block">${item.oldPrice}.00</span>
-                        <span className="line-through  font-semibold text-lg  block ">${item.nowPrice}.00</span>
+                      <span className="line-through text-[#666666] font-semibold text-sm block">
+                        ${item.oldPrice}.00
+                      </span>
+                      <span className="line-through  font-semibold text-lg  block ">
+                        ${item.nowPrice}.00
+                      </span>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
+            {/* brand img */}
             <div className="comp__category flex border-0 border-t-2 border-[#CACDD8] ">
-                {
-                    compCategory.map(item=>(
-                        <div key={item.title} className="p-7 cursor-pointer hover:bg-[#F5F7FF]">
-                            <img src={item.photo} alt="" />
-                        </div>
-                    ))
-                }
+              {compCategory.map((item) => (
+                <div
+                  key={item.title}
+                  className="p-7 cursor-pointer hover:bg-[#F5F7FF]"
+                >
+                  <img src={item.photo} alt="" />
+                </div>
+              ))}
             </div>
           </div>
         </li>
