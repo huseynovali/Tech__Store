@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import MobileAccoundPopover from "./MobileAccoundPopover";
+import MobileSidebar from "./MobileSidebar";
 
 function MobileHeader() {
+  const [isOpenSidebar, setIsOpenSidebar] = useState(false);
+
+  const toogleSidebar = () => {
+    setIsOpenSidebar(!isOpenSidebar);
+  };
+
   return (
     <div className="relative flex py-3 w-full">
       <div className="logo absolute -top-7 bg-[#0156FF] w-16 h-9 rounded-t-full flex justify-center -z-1">
@@ -20,7 +27,13 @@ function MobileHeader() {
       </div>
 
       <div className="header__components flex items-center w-full">
-        <div className="menu__bar ">
+        <div className="SidebarComponent absolute">
+          <MobileSidebar
+            isOpenSidebar={isOpenSidebar}
+            setIsOpenSidebar={setIsOpenSidebar}
+          />
+        </div>
+        <div className="menu__bar " onClick={toogleSidebar}>
           <svg
             width="26"
             height="20"
@@ -82,7 +95,7 @@ function MobileHeader() {
             </svg>
           </div>
         </div>
-      <MobileAccoundPopover/>
+        <MobileAccoundPopover />
       </div>
     </div>
   );
