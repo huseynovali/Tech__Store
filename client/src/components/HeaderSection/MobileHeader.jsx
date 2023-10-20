@@ -27,7 +27,7 @@ function MobileHeader() {
       </div>
 
       <div className="header__components flex items-center w-full">
-        <div className="SidebarComponent absolute">
+        <div className="SidebarComponent absolute -top-[35px] -left-[12px]">
           <MobileSidebar
             isOpenSidebar={isOpenSidebar}
             setIsOpenSidebar={setIsOpenSidebar}
