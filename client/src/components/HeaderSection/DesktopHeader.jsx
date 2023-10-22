@@ -53,7 +53,7 @@ function DesktopHeader() {
               </svg>
             </div>
 
-            <div className=" min-w-max bg-white hidden group-hover:block absolute  right-[20%]  border">
+            <div className=" min-w-max bg-white hidden group-hover:block absolute  right-[20%]  border z-50">
               <CardHoverSection />
             </div>
           </div>

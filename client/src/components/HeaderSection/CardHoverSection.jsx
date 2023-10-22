@@ -5,7 +5,7 @@ import {cardComp} from "../../utils/const";
 function CardHoverSection() {
   return (
     <div className="">
-      <div className="p-[30px] text-center border-b">
+      <div className="p-[30px] text-center border-b ">
         <p className="text-lg font-semibold">My Cart</p>
         <span className="text-xs text-[#A2A6B0] pt-1 pb-4 block">
           {cardComp.length} item in cart
@@ -14,7 +14,7 @@ function CardHoverSection() {
           View or Edit Your Cart
         </Button>
       </div>
-      {/* card hover list element */}
+         
       <div className="cart__list">
         {cardComp.slice(0, 2).map((item, index) => (
           <div

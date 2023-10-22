@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 function Slide() {
   return (
-    <div className="slide__section">
+    <div className="slide__section ">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -25,9 +25,9 @@ function Slide() {
         }}
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="mySwiper w-full"
+        className="mySwiper w-full z-30"
       >
-        <SwiperSlide>
+        <SwiperSlide >
           <img src={img1} alt="" className="w-full" />
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>

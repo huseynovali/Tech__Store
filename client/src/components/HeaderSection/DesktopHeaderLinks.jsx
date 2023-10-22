@@ -2,6 +2,7 @@ import React from "react";
 import { compCategory, popComp } from "../../utils/const";
 import NestedLiElement from "./NestedLiElement";
 import ProductCard from "../ProductCard";
+import BrandList from "../BrandList";
 
 function DesktopHeaderLinks() {
   return (
@@ -28,15 +29,8 @@ function DesktopHeaderLinks() {
               </div>
             </div>
             {/* brand img */}
-            <div className="comp__category flex border-0 border-t-2 border-[#CACDD8] ">
-              {compCategory.map((item) => (
-                <div
-                  key={item.title}
-                  className="p-7 cursor-pointer hover:bg-[#F5F7FF]"
-                >
-                  <img src={item.photo} alt="" />
-                </div>
-              ))}
+            <div className="comp__category border-0 border-t-2 border-[#CACDD8] ">
+             <BrandList/>
             </div>
           </div>
         </li>

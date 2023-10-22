@@ -7,6 +7,7 @@ import CustomeBuildsSection from '../components/HomeCom/CustomeBuildsSection'
 import MsiLaptopsSection from '../components/HomeCom/MsiLaptopsSection'
 import Desktops from '../components/HomeCom/Desktops'
 import Monitor from '../components/HomeCom/Monitor'
+import BrandList from '../components/BrandList'
 function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Home() {
             <MsiLaptopsSection/>
             <Desktops/>
             <Monitor/>
+            <BrandList/>
       </Container>
  
     </div>
