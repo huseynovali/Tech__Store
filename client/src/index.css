@@ -11,17 +11,15 @@
 }
 
 .slide__section .swiper-button-prev::after {
-  @apply text-xs text-white;
+  @apply text-xs text-white z-0;
 }
 
 .slide__section .swiper-button-prev {
   @apply h-12 w-16 bg-[#252931] justify-end px-5 rounded-e-[30px] -left-7;
 }
 
-
-
 .products .swiper-button-next::after {
-  @apply text-xs text-white;
+  @apply text-xs text-white z-0;
 }
 
 .products .swiper-button-next {
@@ -29,7 +27,7 @@
 }
 
 .products .swiper-button-prev::after {
-  @apply text-xs text-white;
+  @apply text-xs text-white z-0;
 }
 
 .products .swiper-button-prev {
