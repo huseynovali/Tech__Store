@@ -2,8 +2,8 @@ import React from "react";
 
 function ProductCard({ data }) {
   return (
-    <div>
-      <div className="px-6">
+
+      <div className="px-4">
         <div className="stock__checker p-2">
           {data.inStock ? (
             <svg
@@ -45,8 +45,8 @@ function ProductCard({ data }) {
           )}
         </div>
         {/* comp image */}
-        <div className="comp__img h-[150px] w-[150px]">
-          <img src={data.photo} alt="" className="w-full h" />
+        <div className="comp__img h-[150px] w-[150px] m-auto">
+          <img src={data.photo} alt="" className="w-full" />
         </div>
         {/* rating and reviews */}
         <div className="rating__reviews flex w-full justify-between datas-center pt-2">
@@ -100,7 +100,7 @@ function ProductCard({ data }) {
           </span>
         </div>
       </div>
-    </div>
+ 
   );
 }
 

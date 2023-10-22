@@ -49,8 +49,13 @@ function ZipContainer() {
         </svg>
       </div>
       <div className="line w-[2px] h-6 mx-3 bg-[#00AEB8] hidden lg:block"></div>
-      <p className="text-[#272560] text-lg"><b>own</b> it now, up to 6 months interest free </p>
-      <span className="text-[#272560] text-sm underline lg:px-1"> learn more</span>
+      <p className="text-[#272560] text-lg">
+        <b>own</b> it now, up to 6 months interest free{" "}
+      </p>
+      <span className="text-[#272560] text-sm underline lg:px-1">
+        {" "}
+        learn more
+      </span>
     </div>
   );
 }
