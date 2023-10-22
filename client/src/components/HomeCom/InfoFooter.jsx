@@ -2,7 +2,7 @@ import React from "react";
 
 function InfoFooter() {
   return (
-    <div className="w-[85%] mx-auto grid grid-cols-3 ">
+    <div className="w-[85%] mx-auto grid lg:grid-cols-3 gap-32 py-12 ">
       <div className="flex flex-col items-center">
         <div className="w-[65px] h-[65px] bg-[#0156FF] rounded-full flex justify-center items-center">
           <svg
@@ -19,7 +19,7 @@ function InfoFooter() {
           </svg>
         </div>
         <p className="text-lg font-bold pt-6 pb-3">Product Support</p>
-        <p>Up to 3 years on-site warranty available for your peace of mind.</p>
+        <p className="text-center">Up to 3 years on-site warranty available for your peace of mind.</p>
       </div>
       <div className="flex flex-col items-center">
         <div className="w-[65px] h-[65px] bg-[#0156FF] rounded-full flex justify-center items-center">
@@ -49,6 +49,7 @@ function InfoFooter() {
           </svg>
         </div>
         <p className="text-lg font-bold pt-6 pb-3">Personal Account</p>
+        <p className="text-center">With big discounts, free delivery and a dedicated support specialist.</p>
         <p></p>
       </div>
       <div className="flex flex-col items-center">
@@ -79,7 +80,7 @@ function InfoFooter() {
           </svg>
         </div>
         <p className="text-lg font-bold pt-6 pb-3">Amazing Savings</p>
-        <p>Up to 70% off new Products, you can be sure of the best price.</p>
+        <p className="text-center">Up to 70% off new Products, you can be sure of the best price.</p>
       </div>
     </div>
   );
