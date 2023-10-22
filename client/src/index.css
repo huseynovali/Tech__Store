@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next::after {
+  @apply text-xs text-white ;
+}
+
+.swiper-button-next {
+    @apply h-12 w-16 bg-[#252931] justify-start px-5 rounded-s-[30px] -right-7;
+  }
+
+  .swiper-button-prev::after {
+    @apply text-xs text-white ;
+  }
+  
+  .swiper-button-prev {
+      @apply h-12 w-16 bg-[#252931] justify-end px-5 rounded-e-[30px] -left-7;
+    }
