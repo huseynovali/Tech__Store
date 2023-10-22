@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
-function TabComponent({ children, categories, compType }) {
+import CompCategoryList from "./CompCategoryList";
+function TabComponent({ categories, compType }) {
   return (
     <div>
       <Tab.Group>
@@ -35,14 +36,15 @@ function TabComponent({ children, categories, compType }) {
                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                   )}
                 >
-                  {React.Children.map(children, (child) => {
+                  {/* {React.Children.map(children, (child) => {
                     if (React.isValidElement(child)) {
                       return React.cloneElement(child, {
                         data: compType[item],
                       });
                     }
                     return child;
-                  })}
+                  })} */}
+                  <CompCategoryList data={compType[item]} />
                 </Tab.Panel>
               );
             })}

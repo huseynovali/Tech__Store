@@ -1,9 +1,6 @@
 import React from "react";
-import CompCategoryList from "./CompCategoryList";
 import { msiLaptops } from "../../utils/const";
 import { useState } from "react";
-import { Tab } from "@headlessui/react";
-import classNames from "classnames";
 import TabComponent from "./TabComponent";
 
 function MsiLaptopsSection() {
@@ -17,9 +14,7 @@ function MsiLaptopsSection() {
   return (
     <div>
       <div className="w-full">
-       <TabComponent categories={categories} compType={msiLaptops}>
-       <CompCategoryList  />
-       </TabComponent>
+        <TabComponent categories={categories} compType={msiLaptops} />
       </div>
     </div>
   );
