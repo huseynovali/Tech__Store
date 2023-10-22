@@ -8,15 +8,29 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation,Autoplay } from "swiper/modules";
 function Slide() {
   return (
     <div>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper " >
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Navigation,Autoplay]}
+        className="mySwiper "
+      >
         <SwiperSlide>
           <img src={img1} alt="" />
         </SwiperSlide>
-        <SwiperSlide >Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
