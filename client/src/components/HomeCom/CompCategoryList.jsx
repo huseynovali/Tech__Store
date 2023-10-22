@@ -1,5 +1,4 @@
 import React from "react";
-import { customBuild } from "../../utils/const";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,15 +10,15 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import ProductCard from "../ProductCard";
-function CompCategoryList() {
+function CompCategoryList({data}) {
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between">
       <div
-        style={{ backgroundImage: `url(${customBuild.headerImg})` }}
+        style={{ backgroundImage: `url(${data.headerImg})` }}
         className="w-full bg-cover bg-center  bg-no-repeat lg:w-[230px] shrink-0 flex justify-center items-end py-8"
       >
         <div className="lg:h-1/2 lg:w-1/2 flex flex-col  justify-between items-center text-white  text-center">
-          <p className="text-xl font-semibold">{customBuild.headerText}</p>
+          <p className="text-xl font-semibold">{data.headerText}</p>
           <span className="underline text-xs pt-2">See All Products</span>
         </div>
       </div>
@@ -50,7 +49,7 @@ function CompCategoryList() {
           modules={[Navigation]}
           className="mySwiper w-full"
         >
-          {customBuild.comps.map((item) => (
+          {data.comps.map((item) => (
             <SwiperSlide>
               <ProductCard data={item} />
             </SwiperSlide>

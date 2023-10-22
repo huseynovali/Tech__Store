@@ -1,15 +1,14 @@
-import React from 'react'
-import CompCategoryList from './CompCategoryList'
-
+import React from "react";
+import CompCategoryList from "./CompCategoryList";
+import { customBuild } from "../../utils/const";
 function CustomeBuildsSection() {
   return (
+    <div className="py-5">
+        <CompCategoryList data={customBuild} />
+    </div>
 
-
- <CompCategoryList/>
-
-
-   
+  
   )
 }
 
-export default CustomeBuildsSection
+export default CustomeBuildsSection;
