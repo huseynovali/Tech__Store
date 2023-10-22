@@ -5,6 +5,7 @@ import NewProduct from '../components/HomeCom/NewProduct'
 import ZipContainer from '../components/HomeCom/ZipContainer'
 import CustomeBuildsSection from '../components/HomeCom/CustomeBuildsSection'
 import MsiLaptopsSection from '../components/HomeCom/MsiLaptopsSection'
+import Desktops from '../components/HomeCom/Desktops'
 function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ function Home() {
             <ZipContainer/>
             <CustomeBuildsSection/>
             <MsiLaptopsSection/>
+            <Desktops/>
       </Container>
  
     </div>
