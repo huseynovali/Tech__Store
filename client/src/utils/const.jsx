@@ -10,7 +10,6 @@ import comp9 from "../assets/desktop1.png";
 import comp10 from "../assets/desktop2.png";
 import comp11 from "../assets/monitor1.png";
 
-
 import roccat from "../assets/roccat.png";
 import msi from "../assets/msi.png";
 import razer from "../assets/razer.png";
@@ -23,8 +22,6 @@ import categoryImg1 from "../assets/cusombuild.png";
 import categoryImg2 from "../assets/msidata.png";
 import categoryImg3 from "../assets/desktops.png";
 import categoryImg4 from "../assets/gamingmanitor.png";
-
-
 
 export const cardComp = [
   {
@@ -373,95 +370,111 @@ export const customBuild = {
   ],
 };
 
-
 export const msiLaptops = {
-  headerImg: categoryImg2,
-  headerText: "MSI Laptops",
-  comps: [
-    {
-      inStock: true,
-      photo: comp6,
-      rating: 5,
-      reviews: 4,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp7,
-      rating: 5,
-      reviews: 2,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp8,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp3,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp5,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp5,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp5,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp5,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-    {
-      inStock: true,
-      photo: comp5,
-      rating: 5,
-      reviews: 8,
-      oldPrice: 700,
-      nowPrice: 500,
-      text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
-    },
-  ],
+  MSI_GS_Series: {
+    headerImg: categoryImg2,
+    headerText: "MSI Laptops",
+    comps: [
+      {
+        inStock: true,
+        photo: comp6,
+        rating: 5,
+        reviews: 4,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp7,
+        rating: 5,
+        reviews: 2,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp8,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp3,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp5,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp5,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp5,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp5,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+      {
+        inStock: true,
+        photo: comp5,
+        rating: 5,
+        reviews: 8,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+    ],
+  },
+  MSI_GT_Series: {
+    headerImg: categoryImg1,
+    headerText: "MSI Laptops",
+    comps: [
+      {
+        inStock: true,
+        photo: comp6,
+        rating: 5,
+        reviews: 4,
+        oldPrice: 700,
+        nowPrice: 500,
+        text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
+      },
+    
+    ],
+  },
 };
-
 
 export const desktops = {
   headerImg: categoryImg3,
@@ -550,7 +563,6 @@ export const desktops = {
     },
   ],
 };
-
 
 export const monitor = {
   headerImg: categoryImg4,
