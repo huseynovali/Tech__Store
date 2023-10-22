@@ -9,6 +9,7 @@ import Desktops from "../components/HomeCom/Desktops";
 import Monitor from "../components/HomeCom/Monitor";
 import BrandList from "../components/BrandList";
 import News from "../components/HomeCom/News";
+import Reviews from "../components/HomeCom/Reviews";
 function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ function Home() {
         <Monitor />
         <BrandList />
         <News/>
+        <Reviews/>
       </Container>
     </div>
   );

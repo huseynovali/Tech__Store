@@ -28,8 +28,7 @@
 
 .products .swiper-button-prev::after {
   @apply text-xs text-white z-0;
-}
-
+} 
 .products .swiper-button-prev {
   @apply h-12 w-16 bg-[#666666] justify-end px-5 rounded-e-[30px] -left-7 hidden lg:flex;
 }
@@ -41,4 +40,8 @@
 
 .products-1 .swiper-button-next {
   @apply h-12 w-16 bg-[#666666] justify-end px-5 rounded-e-[30px] -left-7 hidden;
+}
+
+.swiper-pagination{
+  @apply  flex justify-end !ml-auto !w-[50%] !right-0
 }

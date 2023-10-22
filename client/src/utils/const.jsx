@@ -1085,3 +1085,36 @@ export const news = [
     date: "01.09.2020",
   },
 ];
+
+export const reviews = [
+  {
+    description:
+      "My first order arrived today in perfect condition.\
+      From the time I sent a question about the item to making the purchase,\
+       to the shipping and now the delivery, your company, Tecs, has stayed in touch. \
+      Such great service.  I look forward to shopping on your site in the future and would highly recommend it.",
+    author: "Tama Brown",
+  },
+  {
+    description:
+      "My first order arrived today in perfect condition.\
+      From the time I sent a question about the item to making the purchase,\
+       to the shipping and now the delivery, your company, Tecs, has stayed in touch. \
+    ",
+    author: " Brown",
+  },
+  {
+    description:
+      "My first order arrived today in perfect condition.\
+      From the time I sent a question about the item to making the purchase,\
+       to the shipping and now the delivery, your company, Tecs, has stayed in touch. \
+      Such great service.  I look forward to shopping on your site in the future and would highly recommend it.",
+    author: "Tama Brown",
+  },
+  {
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In id enim rem adipisci, earum odio suscipit \
+      sed impedit beatae iste omnis iusto aliquid delectus maiores! Nihil placeat quidem exercitationem adipisci.",
+    author: " Ali",
+  },
+];
