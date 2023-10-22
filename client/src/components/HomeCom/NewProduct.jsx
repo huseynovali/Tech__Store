@@ -14,7 +14,13 @@ import ProductCard from "../ProductCard";
 function NewProduct() {
   return (
     <div className="products py-5">
-      <p className="text-xl font-semibold pb-3">New Products</p>
+      <div className="flex justify-between items-center">
+        <p className="text-xl font-semibold pb-3">New Products</p>
+        <a href="#" className="text-sm text-[#0156FF] underline">
+          See All New Products
+        </a>
+      </div>
+
       <Swiper
         slidesPerView={6}
         spaceBetween={30}
@@ -42,7 +48,7 @@ function NewProduct() {
       >
         {newProduct.map((item) => (
           <SwiperSlide>
-           <ProductCard data={item}/>
+            <ProductCard data={item} />
           </SwiperSlide>
         ))}
       </Swiper>

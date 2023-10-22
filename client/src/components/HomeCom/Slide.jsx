@@ -25,10 +25,10 @@ function Slide() {
         }}
         navigation={true}
         modules={[Navigation, Autoplay]}
-        className="mySwiper "
+        className="mySwiper w-full"
       >
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img1} alt="" className="w-full" />
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
