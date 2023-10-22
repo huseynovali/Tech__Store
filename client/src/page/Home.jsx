@@ -10,6 +10,7 @@ import Monitor from "../components/HomeCom/Monitor";
 import BrandList from "../components/BrandList";
 import News from "../components/HomeCom/News";
 import Reviews from "../components/HomeCom/Reviews";
+import InfoFooter from "../components/HomeCom/InfoFooter";
 function Home() {
   return (
     <div>
@@ -24,6 +25,7 @@ function Home() {
         <BrandList />
         <News/>
         <Reviews/>
+        <InfoFooter/>
       </Container>
     </div>
   );
