@@ -23,6 +23,10 @@ import categoryImg2 from "../assets/msidata.png";
 import categoryImg3 from "../assets/desktops.png";
 import categoryImg4 from "../assets/gamingmanitor.png";
 
+import NewsImg1 from "../assets/NewsImg1.png";
+import NewsImg2 from "../assets/NewsImg2.png";
+import NewsImg3 from "../assets/NewsImg3.png";
+
 export const cardComp = [
   {
     quality: 2,
@@ -997,3 +1001,87 @@ export const monitor = {
     },
   ],
 };
+
+export const news = [
+  {
+    newsImg: NewsImg1,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+      you might want to consider adding peripherals to enhance \
+      your home office setup, your gaming rig, or your business \
+      workspace...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg2,
+    description:
+      "As a gamer, superior sound counts for a lot. You need to hear\
+       enemies tiptoeing up behind you for a sneak attack or a slight\
+        change in the atmospheric music signaling a new challenge or \
+        task...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg3,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+    you might want to consider adding peripherals to enhance \
+    your home office setup, your gaming rig, or your business \
+    workspace...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg2,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+      you might want to consider adding peripherals to enhance \
+      your home office setup, your gaming rig, or your business \
+      workspace...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg2,
+    description:
+      "As a gamer, superior sound counts for a lot. You need to hear\
+       enemies tiptoeing up behind you for a sneak attack or a slight\
+        change in the atmospheric music signaling a new challenge or \
+        task...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg3,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+    you might want to consider adding peripherals to enhance \
+    your home office setup, your gaming rig, or your business \
+    workspace...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg1,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+      you might want to consider adding peripherals to enhance \
+      your home office setup, your gaming rig, or your business \
+      workspace...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg2,
+    description:
+      "As a gamer, superior sound counts for a lot. You need to hear\
+       enemies tiptoeing up behind you for a sneak attack or a slight\
+        change in the atmospheric music signaling a new challenge or \
+        task...",
+    date: "01.09.2020",
+  },
+  {
+    newsImg: NewsImg3,
+    description:
+      "If you’ve recently made a desktop PC or laptop purchase, \
+    you might want to consider adding peripherals to enhance \
+    your home office setup, your gaming rig, or your business \
+    workspace...",
+    date: "01.09.2020",
+  },
+];
