@@ -22,7 +22,7 @@ import gigabyte from "../assets/gigabyte.png";
 import categoryImg1 from "../assets/cusombuild.png";
 import categoryImg2 from "../assets/msidata.png";
 import categoryImg3 from "../assets/desktops.png";
-import categoryImg4 from "../assets/monitor1.png";
+import categoryImg4 from "../assets/gamingmanitor.png";
 
 
 
