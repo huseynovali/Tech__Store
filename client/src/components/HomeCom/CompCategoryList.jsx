@@ -49,9 +49,9 @@ function CompCategoryList({data}) {
           modules={[Navigation]}
           className="mySwiper w-full"
         >
-          {data.comps.map((item) => (
+          {data.comps.map((item,index) => (
             <SwiperSlide>
-              <ProductCard data={item} />
+              <ProductCard data={item} id={index} />
             </SwiperSlide>
           ))}
         </Swiper>

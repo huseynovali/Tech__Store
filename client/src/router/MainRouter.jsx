@@ -3,6 +3,7 @@ import AuthRoutes from "./AuthRoute";
 import PrivateRoutes from "./privateRoute";
 import MainLayout from "../layout/MainLayout";
 import Home from "../page/Home";
+import ProductDetail from "../page/ProductDetail";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -15,8 +16,8 @@ export default function MainRoutes() {
           element:<Home/>,
         },
         {
-          path: "/allusers",
-          element: <p>allusers</p>,
+          path: "/productdetail/:id",
+          element: <ProductDetail/>,
         },
         {
           element: <PrivateRoutes />,

@@ -46,9 +46,9 @@ function NewProduct() {
         modules={[Navigation]}
         className="mySwiper "
       >
-        {newProduct.map((item) => (
+        {newProduct.map((item,index) => (
           <SwiperSlide>
-            <ProductCard data={item} />
+            <ProductCard data={item} id={index}/>
           </SwiperSlide>
         ))}
       </Swiper>

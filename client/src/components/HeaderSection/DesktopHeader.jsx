@@ -1,16 +1,17 @@
 import React from "react";
 import Button from "../Buttons/Button";
 import CardHoverSection from "./CardHoverSection";
-import {cardComp} from "../../utils/const";
+import { cardComp } from "../../utils/const";
 import AccoundHoverSection from "./AccoundHoverSection";
 import SearchComponent from "./SearchComponent";
 import DesktopHeaderLinks from "./DesktopHeaderLinks";
+import { Link } from "react-router-dom";
 function DesktopHeader() {
   return (
     <div>
       <div className="flex items-center justify-between">
         {/* Navbar logo section  */}
-        <div className="logo ">
+        <Link className="logo " to={"/"}>
           <svg
             width="85"
             height="69"
@@ -23,11 +24,11 @@ function DesktopHeader() {
               fill="#0156FF"
             />
           </svg>
-        </div>
+        </Link>
 
         {/* Navbar links */}
         <div className="nav__links flex items-center">
-          <DesktopHeaderLinks/>
+          <DesktopHeaderLinks />
           <Button className=" text-[#0156FF] border-2 border-[#0156FF] py-2 px-7 rounded-[50px] hover:bg-[#0156FF] hover:text-white transition-colors ml-[12.5px]">
             Our Deals
           </Button>
