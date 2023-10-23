@@ -1,59 +1,73 @@
-import React from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import Button from "../Buttons/Button";
-import {cardComp} from "../../utils/const";
+import { cardComp } from "../../utils/const";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteCardProduct } from "../../Store/cardReducer";
 
 function CardHoverSection() {
+  const data = useSelector((state) => state.cardReducer.cardProduct);
+  let Subtotal = data.reduce(
+    (accumulator, item) => accumulator + item.nowPrice,
+    0
+  );
+  const dispatch = useDispatch();
+
   return (
     <div className="">
       <div className="p-[30px] text-center border-b ">
         <p className="text-lg font-semibold">My Cart</p>
         <span className="text-xs text-[#A2A6B0] pt-1 pb-4 block">
-          {cardComp.length} item in cart
+          {data?.length} item in cart
         </span>
         <Button className=" text-[#0156FF] text-sm border-2 border-[#0156FF] py-2 px-12 rounded-[50px] hover:bg-[#0156FF] hover:text-white transition-colors font-semibold">
           View or Edit Your Cart
         </Button>
       </div>
-         
+
       <div className="cart__list">
-        {cardComp.slice(0, 2).map((item, index) => (
-          <div
-            className="flex items-center w-[310px] px-6 py-4 border-b "
-            key={index}
-          >
-            <div>
-              <div>{item.quality}x</div>
+        {data?.slice(0, 2)?.map((item, index) => {
+          return (
+            <div
+              className="flex items-center w-[310px] px-6 py-4 border-b "
+              key={item.id}
+            >
+              <div>
+                <div>{item.quality}x</div>
+              </div>
+              <img src={item.photo} alt="" className="w-[65px] h-[65px]" />
+              <div className="card__product__info">
+                <p className="text-sm">{item.text}</p>
+              </div>
+              <div
+                className="pl-1  flex items-start cursor-pointer hover:scale-105"
+                onClick={() => dispatch(deleteCardProduct(item.id))}
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9.25"
+                    fill="white"
+                    stroke="#CACDD8"
+                    strokeWidth="1.5"
+                  />
+                  <path
+                    d="M7 7L13.5 13.5"
+                    stroke="#A2A6B0"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M13.5 7L7 13.5"
+                    stroke="#A2A6B0"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
             </div>
-            <img src={item.photo} alt="" className="w-[65px] h-[65px]" />
-            <div className="card__product__info">
-              <p className="text-sm">{item.text}</p>
-            </div>
-            <div className="pl-1  flex items-start">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="9.25"
-                  fill="white"
-                  stroke="#CACDD8"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M7 7L13.5 13.5"
-                  stroke="#A2A6B0"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M13.5 7L7 13.5"
-                  stroke="#A2A6B0"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </div>
-          </div>
-        ))}
-        {console.log(cardComp)}
-        {cardComp.length > 2 ? (
+          );
+        })}
+
+        {data.length > 2 ? (
           <div className="text-2xl text-center">. . .</div>
         ) : (
           ""
@@ -62,7 +76,7 @@ function CardHoverSection() {
       {/* card hover footer */}
       <div className="cart__footer px-[30px] py-4 text-center">
         <p className="text-lg font-semibold">
-          <span className="text-[#A2A6B0] text-sm">Subtotal:</span> $499.00
+          <span className="text-[#A2A6B0] text-sm">Subtotal:</span> ${Subtotal}
         </p>
         <div className="buttons flex flex-col justify-center items-center">
           <Button className="bg-[#0156FF] px-[70px] py-2 rounded-[50px] text-white text-sm mb-2 mt-3">
