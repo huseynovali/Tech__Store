@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function MobileAccoundPopover() {
   return (
     <div>
-      <Popover className="relative">
+      <Popover className="relative z-50">
         {({ open }) => (
           <>
             <Popover.Button

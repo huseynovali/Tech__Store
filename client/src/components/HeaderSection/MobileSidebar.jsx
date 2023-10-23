@@ -17,7 +17,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
           leaveFrom="w-[250px] opacity-1"
           leaveTo="w-0 opacity-0"
         >
-          <div className="fixed inset-0 bg-white p-5 ">
+          <div className="fixed inset-0 bg-white p-5 z-50">
             <div className="header flex items-center justify-between  border-b-2 pb-5 ">
               <div className="logo">
                 <svg

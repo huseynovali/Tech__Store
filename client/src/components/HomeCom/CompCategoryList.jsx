@@ -23,7 +23,7 @@ function CompCategoryList({data}) {
         </div>
       </div>
 
-      <div className="w-full lg:w-[calc(100%_-_230px)] products-1 py-4">
+      <div className="w-full lg:w-[calc(100%_-_230px)] products-1 ">
         <Swiper
           slidesPerView={6}
           spaceBetween={30}

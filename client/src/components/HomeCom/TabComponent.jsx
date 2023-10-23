@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
 import CompCategoryList from "./CompCategoryList";

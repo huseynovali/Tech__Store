@@ -22,7 +22,7 @@ function DesktopHeaderLinks() {
                 <NestedLiElement />
               </div>
               {/* top right */}
-              <div className="right flex py-5 px-11 gap-5">
+              <div className="right flex py-5 px-5 gap-5">
                 {popComp.map((item, index) => (
                  <ProductCard data={item}/>
                 ))}
