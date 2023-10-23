@@ -15,7 +15,7 @@ function TopInfo() {
             Visit our showroom in 1234 Street Adress City Address, 1234
           </p>
           <a
-            href=""
+            href="#"
             className="text-white text-bold text-xs relative after:content-[''] after:h-[1px] after:w-full after:absolute after:left-0 after:-bottom-1 after:bg-white mx-1"
           >
             Contact Us

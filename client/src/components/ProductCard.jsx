@@ -45,8 +45,8 @@ function ProductCard({ data }) {
           )}
         </div>
         {/* comp image */}
-        <div className="comp__img h-[150px] w-[150px] m-auto">
-          <img src={data.photo} alt="" className="w-full" />
+        <div className="comp__img  m-auto">
+          <img src={data.photo} alt="" className="h-[150px] w-[150px]" />
         </div>
         {/* rating and reviews */}
         <div className="rating__reviews flex w-full justify-between datas-center pt-2">

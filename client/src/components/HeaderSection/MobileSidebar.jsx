@@ -60,7 +60,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
               <ul>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">Laptops</span>
@@ -82,7 +82,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">Desktop PCs</span>
@@ -104,7 +104,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">Networking Devices</span>
@@ -126,7 +126,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">
@@ -150,7 +150,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">PC Parts</span>
@@ -172,7 +172,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">All Other Products</span>
@@ -194,7 +194,7 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                 </li>
                 <li className="py-1 px-1">
                   <a
-                    href=""
+                    href="#"
                     className="flex justify-between items-center align-middle text-xs"
                   >
                     <span className="-translate-y-0.5">Repairs</span>

@@ -8,7 +8,7 @@ function News() {
       <div className="grid grid-cols-6 gap-8">
         {news.map((item) => (
           <div className="text-center">
-            <img src={item.newsImg} alt="" />
+            <img src={item.newsImg} alt=""  className="w-[235px] h-[150px]"/>
             <p className="text-xs pt-2 px-4">{item.description}</p>
             <span className="text-[10px] text-[#A2A6B0]">{item.date}</span>
           </div>
