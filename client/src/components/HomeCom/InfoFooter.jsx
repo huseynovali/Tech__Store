@@ -1,7 +1,9 @@
 import React from "react";
+import Container from "../Container";
 
 function InfoFooter() {
   return (
+    <Container color={'#F5F7FF'}>
     <div className="w-[85%] mx-auto grid lg:grid-cols-3 gap-32 py-12 ">
       <div className="flex flex-col items-center">
         <div className="w-[65px] h-[65px] bg-[#0156FF] rounded-full flex justify-center items-center">
@@ -83,6 +85,7 @@ function InfoFooter() {
         <p className="text-center">Up to 70% off new Products, you can be sure of the best price.</p>
       </div>
     </div>
+    </Container>
   );
 }
 

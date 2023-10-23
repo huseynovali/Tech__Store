@@ -25,7 +25,7 @@ function Home() {
         <BrandList />
         <News/>
         <Reviews/>
-        <InfoFooter/>
+      
       </Container>
     </div>
   );
