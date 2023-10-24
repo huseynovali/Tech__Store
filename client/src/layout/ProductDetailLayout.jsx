@@ -4,18 +4,15 @@ import ProductDetailHeader from "../components/ProductDetail.jsx/ProductDetailHe
 import ProductImgSection from "../components/ProductDetail.jsx/ProductImgSection";
 
 function ProductDetailLayout() {
-  const params = useParams()
- 
+
+
   return (
     <div>
-      {params.id}
       <ProductDetailHeader />
       <div className="flex">
         <Outlet />
-        <ProductImgSection/>
+        <ProductImgSection />
       </div>
-       
-
     </div>
   );
 }

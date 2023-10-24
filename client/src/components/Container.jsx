@@ -1,9 +1,9 @@
 import React from "react";
 
-function Container({ children, color }) {
-
+function Container({ children, color,...props} ) {
+  console.log({ ...props });
   return (
-    <div className={`w-full `} style={{background:color}}>
+    <div className={`w-full `} style={{ background: color, ...props }}>
       <div className="w-full px-3 lg:w-[1240px] lg:p-0 m-auto">{children}</div>
     </div>
   );
