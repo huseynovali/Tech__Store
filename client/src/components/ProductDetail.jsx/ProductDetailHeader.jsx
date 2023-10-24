@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Container from "../Container";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../Buttons/Button";
 import classNames from "classnames";
+import { useSelector } from "react-redux";
 function ProductDetailHeader() {
-  
+  const data = useSelector((state) => state.cardReducer.ProductById);
   const location = useLocation();
   const tab =
     location.pathname.split("/")[location.pathname.split("/").length - 1];
-  const [compCound, setCompCound] = useState(0);
+  const [compCound, setCompCound] = useState(1);
   const handleInputChange = (e) => {
     setCompCound(e.target.value);
   };
@@ -58,7 +59,8 @@ function ProductDetailHeader() {
         <div className="right">
           <div className="cound__card flex items-center justify-center">
             <p className="text-sm ">
-              On Sale from <span className="font-semibold">$3,299.00</span>
+              On Sale from{" "}
+              <span className="font-semibold">${data.price * compCound}</span>
             </p>
             <div className="number__input__group relative ml-2">
               <input
