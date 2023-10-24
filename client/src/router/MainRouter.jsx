@@ -4,6 +4,7 @@ import PrivateRoutes from "./privateRoute";
 import MainLayout from "../layout/MainLayout";
 import Home from "../page/Home";
 import ProductDetail from "../page/ProductDetail";
+import ProductAbout from "../components/ProductDetail.jsx/ProductAbout";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -12,12 +13,26 @@ export default function MainRoutes() {
       path: "/",
       children: [
         {
-          path: "/",
-          element:<Home/>,
+          path: "home",
+          element: <Home />,
         },
         {
-          path: "/productdetail/:id",
-          element: <ProductDetail/>,
+          path: "/productdetail/:id/:category/:compCategory/",
+          element: <ProductDetail />,
+          children: [
+            {
+              path: "aboutproduct",
+              element: <ProductAbout />,
+            },
+            {
+              path: "detail",
+              element: <>product detail</>,
+            },
+            {
+              path: "specs",
+              element: <>specs</>,
+            },
+          ],
         },
         {
           element: <PrivateRoutes />,

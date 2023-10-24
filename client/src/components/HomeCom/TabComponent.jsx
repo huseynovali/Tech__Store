@@ -28,13 +28,7 @@ function TabComponent({ categories, compType }) {
           <div className="py-5">
             {Object.keys(categories).map((item, idx) => {
               return (
-                <Tab.Panel
-                  key={idx}
-                  className={classNames(
-                    " bg-white ",
-                  
-                  )}
-                >
+                <Tab.Panel key={idx} className={classNames(" bg-white ")}>
                   {/* {React.Children.map(children, (child) => {
                     if (React.isValidElement(child)) {
                       return React.cloneElement(child, {

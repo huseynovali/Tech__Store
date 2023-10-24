@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function ProductCard({ data,id }) {
   return (
     <Link
-      to={"/productdetail/"+id}
+      to={`/productdetail/${id}/${data.category}/${data.compcategory}`}
       className="px-3 hover:shadow-md group/a relative lg:w-[204px] block"
     >
       <div className="like__statistic absolute right-1 top-1  hidden group-hover/a:block">

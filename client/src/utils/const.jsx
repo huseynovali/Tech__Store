@@ -386,6 +386,8 @@ export const msiLaptops = {
         reviews: 4,
         oldPrice: 700,
         nowPrice: 500,
+        category:'Laptops',
+        compcategory:"MSI_GS_Series",
         text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
       },
       {
