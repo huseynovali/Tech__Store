@@ -6,7 +6,10 @@ import AccoundHoverSection from "./AccoundHoverSection";
 import SearchComponent from "./SearchComponent";
 import DesktopHeaderLinks from "./DesktopHeaderLinks";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 function DesktopHeader() {
+  const data = useSelector((state) => state.cardReducer.cardProduct);
+
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -43,7 +46,7 @@ function DesktopHeader() {
           {/* Card */}
           <div className="card__section ml-6 mr-9 group  relative ">
             <div className="notification w-4 h-4 bg-[#0156FF] rounded-full text-white text-[10px] flex justify-center items-center absolute -right-1 -top-1 z-10">
-              {cardComp.length}
+              {data?.length}
             </div>
             <div className="hover:scale-105">
               <svg width="25" height="25" viewBox="0 0 25 25">
