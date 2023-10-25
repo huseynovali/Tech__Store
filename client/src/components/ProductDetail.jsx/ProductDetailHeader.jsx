@@ -4,8 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 import Button from "../Buttons/Button";
 import classNames from "classnames";
 import { useSelector } from "react-redux";
+
 function ProductDetailHeader() {
-  const data = useSelector((state) => state.cardReducer.ProductById);
+  const data = useSelector((state) => state.productReducer.ProductById);
   const location = useLocation();
   const tab =
     location.pathname.split("/")[location.pathname.split("/").length - 1];
