@@ -1,5 +1,5 @@
 import {  createSlice } from "@reduxjs/toolkit";
-import comp from "../assets/image 42.png";
+import comp from "../assets/image 9 (1).png";
 
 const initialState = {
   ProductById: {
