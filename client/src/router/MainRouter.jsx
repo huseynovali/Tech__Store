@@ -6,6 +6,7 @@ import Home from "../page/Home";
 import ProductDetail from "../page/ProductDetail";
 import ProductAbout from "../components/ProductDetail.jsx/ProductAbout";
 import CompDetailTab from "../components/ProductDetail.jsx/CompDetailTab";
+import CompSpecs from "../components/ProductDetail.jsx/CompSpecs";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -31,7 +32,7 @@ export default function MainRoutes() {
             },
             {
               path: "specs",
-              element: <>specs</>,
+              element: <CompSpecs/>,
             },
           ],
         },

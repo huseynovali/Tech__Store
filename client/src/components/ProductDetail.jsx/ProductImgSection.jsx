@@ -2,7 +2,9 @@ import React from 'react'
 
 function ProductImgSection() {
   return (
-    <div>ProductImgSection</div>
+    <div>
+      
+    </div>
   )
 }
 

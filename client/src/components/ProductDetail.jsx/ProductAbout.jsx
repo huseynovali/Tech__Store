@@ -9,7 +9,7 @@ function ProductAbout() {
   return (
     <div>
       <p className="texl-lg">{data.about}</p>
-      <div className="colors flex gap-4">
+      <div className="colors flex gap-4 pt-10">
         {data.colors.map((color) => (
           <div
             className={classNames(

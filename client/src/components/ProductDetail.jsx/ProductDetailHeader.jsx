@@ -9,7 +9,7 @@ function ProductDetailHeader() {
   const data = useSelector((state) => state.productReducer.ProductById);
   const location = useLocation();
   const tab =
-    location.pathname.split("/")[location.pathname.split("/").length - 1];
+    location.pathname.split("/").pop();
   const [compCound, setCompCound] = useState(1);
   const handleInputChange = (e) => {
     setCompCound(e.target.value);
