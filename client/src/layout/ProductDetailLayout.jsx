@@ -4,6 +4,8 @@ import ProductDetailHeader from "../components/ProductDetail.jsx/ProductDetailHe
 import ProductImgSection from "../components/ProductDetail.jsx/ProductImgSection";
 import ProductInfoLayout from "../components/ProductDetail.jsx/ProductInfoLayout";
 import Competition from "../components/ProductDetail.jsx/Competition";
+import Support from "../components/ProductDetail.jsx/Support";
+import Featues from "../components/ProductDetail.jsx/Featues";
 
 function ProductDetailLayout() {
   return (
@@ -14,6 +16,8 @@ function ProductDetailLayout() {
         <ProductImgSection />
       </div>
       <Competition/>
+      <Support/>
+      <Featues/>
     </div>
   );
 }
