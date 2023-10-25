@@ -44,6 +44,20 @@
 .swiper-pagination {
   @apply flex justify-end !ml-auto !w-[50%] !right-0;
 }
+.left .swiper-pagination{
+  @apply flex justify-start  items-end  !left-0 !bottom-0 !relative !mt-10 !w-full;
+}
+
+.left .swiper-pagination-bullet {
+  @apply bg-white opacity-100;
+}
+
+.left .swiper-pagination-bullet-active {
+  @apply bg-[#0156ff]
+}
+
+
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -60,3 +74,4 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 100%;
   z-index: 10;
 }
+
