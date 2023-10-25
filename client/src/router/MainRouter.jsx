@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../page/Home";
 import ProductDetail from "../page/ProductDetail";
 import ProductAbout from "../components/ProductDetail.jsx/ProductAbout";
+import CompDetailTab from "../components/ProductDetail.jsx/CompDetailTab";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -26,7 +27,7 @@ export default function MainRoutes() {
             },
             {
               path: "detail",
-              element: <>product detail</>,
+              element: <CompDetailTab/>,
             },
             {
               path: "specs",
