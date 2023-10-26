@@ -45,7 +45,7 @@
   @apply flex justify-end !ml-auto !w-[50%] !right-0;
 }
 .left .swiper-pagination {
-  @apply flex justify-start  items-end  !left-0 !bottom-0 !relative !mt-10 !w-full;
+  @apply justify-start  items-end  !left-0 !bottom-0 !relative !mt-10 !w-full hidden lg:flex;
 }
 
 .left .swiper-pagination-bullet {
@@ -55,6 +55,7 @@
 .left .swiper-pagination-bullet-active {
   @apply bg-[#0156ff];
 }
+
 
 .support__right {
   flex-shrink: 0;
