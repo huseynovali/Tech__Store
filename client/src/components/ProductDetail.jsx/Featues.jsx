@@ -16,7 +16,7 @@ function Featues() {
           expression in color with advanced RGB lighting control and
           synchronization.
         </p>
-        <div className="featues__list grid md:grid-cols-2 lg:grid-cols-4 md:gap-28 lg:gap-24 pt-20 px-20">
+        <div className="featues__list grid md:grid-cols-2 lg:grid-cols-4 md:gap-28 lg:gap-24 pt-20 px-16 md:px-20 gap-20">
           <div className="flex flex-col justify-center items-center">
             <div className="w-[136px] h-[136px] bg-black rounded-full flex justify-center items-center ">
               <img src={intl} alt="" />

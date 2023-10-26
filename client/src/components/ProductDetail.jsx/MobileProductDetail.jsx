@@ -5,6 +5,7 @@ import ProductInfoLayout from "./ProductInfoLayout";
 import ProductDetailHeaderRight from "./ProductDetailHeaderRight";
 import Competition from "./Competition";
 import Support from "./Support";
+import Featues from "../ProductDetail.jsx/Featues";
 
 function MobileProductDetail() {
   return (
@@ -15,7 +16,7 @@ function MobileProductDetail() {
       <ProductDetailHeaderRight />
       <Competition />
       <Support />
-      
+      <Featues/>
     </div>
   );
 }
