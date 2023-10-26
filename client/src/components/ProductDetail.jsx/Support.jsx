@@ -15,7 +15,7 @@ function Support() {
             Our Buyer Guide <span className="text-[#0156FF]">→</span>
           </div>
         </div>
-        <div className="support__right md:w-[506px] md:h-[275px] lg:h-[407px] lg:w-[656px] "></div>
+        <div className="support__right md:w-[506px] md:h-[275px] lg:h-[407px] lg:w-[656px] w-full h-[315px] "></div>
       </div>
     </Container>
   );
