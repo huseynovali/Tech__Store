@@ -6,6 +6,7 @@ const initialState = {
     id: 125,
     price: 2430,
     photo: comp,
+    
     name: "MSI MPG Trident 3",
     about:
       "MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER,\

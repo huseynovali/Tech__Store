@@ -14,7 +14,7 @@ function DesktopHeader() {
     <div>
       <div className="flex items-center justify-between">
         {/* Navbar logo section  */}
-        <Link className="logo " to={"/"}>
+        <Link className="logo " to={"/home"}>
           <svg
             width="85"
             height="69"

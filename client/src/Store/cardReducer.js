@@ -28,15 +28,25 @@ const initialState = {
       text: "EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...",
     },
   ],
-
 };
 
 const cardReducer = createSlice({
   name: "card",
   initialState,
   reducers: {
-    addCard: (state, action) => {
-      console.log("da");
+    addCart: (state, action) => {
+      const existingProduct = state.cardProduct.find(
+        (item) => item.id === action.payload.data.id
+      );
+
+      if (existingProduct) {
+        existingProduct.quality += +action.payload.compCound;
+      } else {
+        state.cardProduct.push({
+          ...action.payload.data,
+          quality: action.payload.compCound,
+        });
+      }
     },
     deleteCardProduct: (state, action) => {
       state.cardProduct = state.cardProduct.filter(
@@ -46,5 +56,5 @@ const cardReducer = createSlice({
   },
 });
 
-export const { deleteCardProduct, addCard } = cardReducer.actions;
+export const { deleteCardProduct, addCart } = cardReducer.actions;
 export default cardReducer.reducer;

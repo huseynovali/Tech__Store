@@ -3,7 +3,7 @@ import React from 'react'
 function Button({children,...props}) {
   return (
     <div>
-        <button className={props.className}>
+        <button className={props.className} {...props}>
             {children}
         </button>
     </div>

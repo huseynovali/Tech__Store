@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import Button from "../Buttons/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { addCart } from "../../Store/cardReducer";
 
 function ProductDetailHeaderRight() {
   const data = useSelector((state) => state.productReducer.ProductById);
+    const card = useSelector((state) => state.cardReducer.cardProduct);
+  console.log(card);
   const [compCound, setCompCound] = useState(1);
   const handleInputChange = (e) => {
     setCompCound(e.target.value);
   };
+  const dispatch = useDispatch()
+
   return (
     <div>
       <div className="right py-8 md:py-0">
@@ -61,7 +66,7 @@ function ProductDetailHeaderRight() {
           </div>
           <div>
             <div className="pay__buttons flex ml-5 items-center">
-              <Button className="bg-[#0156FF] px-8 py-4 rounded-[50px] text-white text-sm ">
+              <Button className="bg-[#0156FF] px-8 py-4 rounded-[50px] text-white text-sm " onClick={()=>dispatch(addCart({data,compCound})) }>
                 Add to Cart
               </Button>
               <Button className="bg-[#FFB800] px-8 py-4 rounded-[50px] text-white  text-xs flex items-center ml-3">
