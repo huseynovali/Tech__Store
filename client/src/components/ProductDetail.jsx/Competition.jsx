@@ -12,7 +12,7 @@ function Competition() {
   return (
     <Container color={"#000"}>
       <div className="flex justify-between w-full">
-        <div className="left text-white py-[165px] w-[34%] relative">
+        <div className="left md:p-[51px] text-white md:w-[55%] lg:py-[165px] lg:w-[34%] relative">
           <Swiper
             spaceBetween={30}
             pagination={{
@@ -21,7 +21,7 @@ function Competition() {
             modules={[Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide className="pl-10">
+            <SwiperSlide className="lg:pl-10">
               <p className="text-5xl">Outplay the Competittion</p>
               <p className="text-lg pt-16">
                 Experience a 40% boost in computing from last generation. MSI
@@ -34,7 +34,7 @@ function Competition() {
                 *Performance compared to i7-9700. Specs varies by model.
               </p>
             </SwiperSlide>
-            <SwiperSlide className="pl-10">
+            <SwiperSlide className="lg:pl-10">
               <p className="text-5xl">Outplay the Competittion</p>
               <p className="text-lg pt-16">
                 Experience a 40% boost in computing from last generation. MSI
@@ -47,7 +47,7 @@ function Competition() {
                 *Performance compared to i7-9700. Specs varies by model.
               </p>
             </SwiperSlide>
-            <SwiperSlide className="pl-10">
+            <SwiperSlide className="lg:pl-10">
               <p className="text-5xl">Outplay the Competittion</p>
               <p className="text-lg pt-16">
                 Experience a 40% boost in computing from last generation. MSI
@@ -63,7 +63,7 @@ function Competition() {
           </Swiper>
         </div>
         <div
-          className="right bg-gradient-to-r w-[56%]"
+          className="right bg-gradient-to-r lg:w-[56%] "
           style={{
             background:
               " linear-gradient(90deg, #010101 0%, #0E0F10 68.23%, rgba(20, 21, 23, 0.00) 100%)",

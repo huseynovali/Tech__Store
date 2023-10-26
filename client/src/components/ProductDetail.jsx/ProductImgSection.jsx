@@ -5,8 +5,8 @@ function ProductImgSection() {
   const data = useSelector((state) => state.productReducer.ProductById);
 
   return (
-    <div className="px-28 py-20 relative">
-      <div className="absolute left-6">
+    <div className="md:py-10 lg:px-28 py-2 lg:py-20 relative ">
+      <div className="absolute left-6 pt-2">
         <div className="hover:scale-105 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,9 +88,9 @@ function ProductImgSection() {
           </svg>
         </div>
       </div>
-      <div className="w-[250px]">
-        <img src={data.photo} alt="" className="h-[400px] w-[250px]" />
-        <div className="flex justify-center items-center pt-8 ">
+      <div className="lg:w-[250px] w-full  flex flex-col items-center text-center">
+        <img src={data.photo} alt="" className="lg:h-[400px] lg:w-[250px] w-[120px]" />
+        <div className="flex justify-center items-center pt-8 w-[70%]">
           <div>
             <svg
               width="77"
@@ -136,7 +136,7 @@ function ProductImgSection() {
               </defs>
             </svg>
           </div>
-          <div className="line w-[2px] h-6 mx-3 bg-[#00AEB8] hidden lg:block"></div>
+          <div className="line w-[2px] h-6 mx-3 bg-[#00AEB8] "></div>
           <p className="text-[#272560] text-xs ">
             <b>own</b> it now, up to 6 months interest free{" "}
             <span className="text-[#272560] text-xs underline ">

@@ -7,8 +7,8 @@ function ProductInfoLayout() {
   const data = useSelector((state) => state.productReducer.ProductById);
 
   return (
-    <div className="w-[60%] bg-[#F5F7FF] flex justify-end px-28">
-      <div className=" py-16 lg:w-[550px] flex flex-col items-end">
+    <div className=" w-[60%] bg-[#F5F7FF] flex justify-end lg:px-28 px-5">
+      <div className=" md:py-8 lg:py-16 lg:w-[550px] flex flex-col items-end">
         <div className="lg:w-[480px]">
           <p className="">{`${params.category} > ${params.compCategory}`}</p>
           <p className="text-3xl font-semibold pt-6 pb-3">{data.name}</p>
@@ -27,7 +27,9 @@ function ProductInfoLayout() {
           </div>
         </div>
 
-        <p className="text-left w-full text-sm font-semibold pt-20">+ More information</p>
+        <p className="text-left w-full text-sm font-semibold pt-20 hidden lg:block">
+          + More information
+        </p>
       </div>
     </div>
   );

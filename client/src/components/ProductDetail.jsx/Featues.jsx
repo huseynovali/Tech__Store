@@ -11,12 +11,12 @@ function Featues() {
     >
       <div className="text-white py-20">
         <p className="text-4xl font-medium text-center">Featues</p>
-        <p className="text-lg font-light text-center w-[28%] mx-auto pt-7">
+        <p className="text-lg font-light text-center md:w-[50%] lg:w-[28%] mx-auto pt-7">
           The MPG series brings out the best in gamers by allowing full
           expression in color with advanced RGB lighting control and
           synchronization.
         </p>
-        <div className="featues__list grid grid-cols-4 gap-24 pt-20">
+        <div className="featues__list grid md:grid-cols-2 lg:grid-cols-4 md:gap-28 lg:gap-24 pt-20 px-20">
           <div className="flex flex-col justify-center items-center">
             <div className="w-[136px] h-[136px] bg-black rounded-full flex justify-center items-center ">
               <img src={intl} alt="" />

@@ -57,11 +57,10 @@
 }
 
 .support__right {
-  width: 656px;
-  height: 407px;
   flex-shrink: 0;
-  background: url('./assets/sa.png'), #F5F7FF 50% / cover no-repeat;
+  background: url("./assets/sa.png"), #f5f7ff 50% / cover no-repeat;
   background-blend-mode: multiply;
+  background-size: cover;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

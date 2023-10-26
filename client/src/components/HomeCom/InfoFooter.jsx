@@ -4,7 +4,7 @@ import Container from "../Container";
 function InfoFooter() {
   return (
     <Container color={"#F5F7FF"}>
-      <div className="w-[85%] mx-auto grid lg:grid-cols-3 gap-32 py-12 ">
+      <div className="lg:w-[85%] mx-auto grid  gap-4 md:grid-cols-3 lg:gap-32  py-12 ">
         <div className="flex flex-col items-center">
           <div className="w-[65px] h-[65px] bg-[#0156FF] rounded-full flex justify-center items-center">
             <svg
