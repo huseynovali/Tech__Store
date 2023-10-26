@@ -7,19 +7,20 @@ import ProductDetail from "../page/ProductDetail";
 import ProductAbout from "../components/ProductDetail.jsx/ProductAbout";
 import CompDetailTab from "../components/ProductDetail.jsx/CompDetailTab";
 import CompSpecs from "../components/ProductDetail.jsx/CompSpecs";
+import ContactUs from "../page/ContactUs";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
     {
       element: <MainLayout />,
-      path: "/",
+      path: "/home",
       children: [
         {
-          path: "home",
+          index: true,
           element: <Home />,
         },
         {
-          path: "/productdetail/:id/:category/:compCategory/",
+          path: "productdetail/:id/:category/:compCategory/",
           element: <ProductDetail />,
           children: [
             {
@@ -28,19 +29,23 @@ export default function MainRoutes() {
             },
             {
               path: "detail",
-              element: <CompDetailTab/>,
+              element: <CompDetailTab />,
             },
             {
               path: "specs",
-              element: <CompSpecs/>,
+              element: <CompSpecs />,
             },
           ],
+        },
+        {
+          path:'contact us',
+          element:<ContactUs/>
         },
         {
           element: <PrivateRoutes />,
           children: [
             {
-              path: "/profile",
+              path: "profile",
               element: <p>Profile</p>,
               children: [
                 {
@@ -55,7 +60,7 @@ export default function MainRoutes() {
           element: <AuthRoutes />,
           children: [
             {
-              path: "/login",
+              path: "login",
               element: <h1>Login</h1>,
             },
           ],

@@ -2,10 +2,10 @@ import React from "react";
 import Button from "./Buttons/Button";
 import { Link } from "react-router-dom";
 
-function ProductCard({ data,id }) {
+function ProductCard({ data, id }) {
   return (
     <Link
-      to={`/productdetail/${id}/${data.category}/${data.compcategory}/aboutproduct`}
+      to={`/home/productdetail/${id}/${data.category}/${data.compcategory}/aboutproduct`}
       className="px-3 hover:shadow-md group/a relative lg:w-[204px] block"
     >
       <div className="like__statistic absolute right-1 top-1  hidden group-hover/a:block">
