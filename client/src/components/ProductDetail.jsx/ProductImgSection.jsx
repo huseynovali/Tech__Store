@@ -5,7 +5,7 @@ function ProductImgSection() {
   const data = useSelector((state) => state.productReducer.ProductById);
 
   return (
-    <div className="md:py-10 lg:px-28 py-2 lg:py-20 relative ">
+    <div className="md:py-10 lg:px-28 md:px-12 py-2 lg:py-20 relative ">
       <div className="absolute left-6 pt-2">
         <div className="hover:scale-105 cursor-pointer">
           <svg
@@ -90,7 +90,7 @@ function ProductImgSection() {
       </div>
       <div className="lg:w-[250px] w-full  flex flex-col items-center text-center">
         <img src={data.photo} alt="" className="lg:h-[400px] lg:w-[250px] w-[120px]" />
-        <div className="flex justify-center items-center pt-8 w-[70%]">
+        <div className="flex justify-center items-center pt-8 w-[256px] ">
           <div>
             <svg
               width="77"
