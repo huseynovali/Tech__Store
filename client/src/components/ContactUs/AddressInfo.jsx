@@ -2,7 +2,7 @@ import React from "react";
 
 function AddressInfo() {
   return (
-    <div className="px-8 py-7 bg-[#F5F7FF] max-h-fit w-[400px] h-[400px]">
+    <div className="px-8 py-7 bg-[#F5F7FF] max-h-fit w-full md:w-[400px] h-[400px] mt-3">
       <ul>
         <li className="flex">
           <svg

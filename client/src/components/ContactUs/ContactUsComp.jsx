@@ -14,19 +14,19 @@ function ContactUsComp() {
       <div className="py-5">
         <div className="contuct__us__left">
           <p className="capitalize">{url}</p>
-          <p className="text-4xl font-semibold py-4">Contact Us</p>
-          <div className="flex justify-between">
+          <p className="text-lg md:text-4xl font-semibold py-2 md:py-4 ">Contact Us</p>
+          <div className=" flex flex-col md:flex-row justify-between">
             <div>
-              <p className="text-lg">
+              <p className="text-xs md:text-lg ">
                 We love hearing from you, our Shop customers.
               </p>
-              <p className="text-lg">
+              <p className="text-xs md:text-lg ">
                 Please contact us and we will make sure to get back to you as
                 soon as we possibly can.
               </p>
               <ContactUsForm />
             </div>
-            <AddressInfo/>
+            <AddressInfo />
           </div>
         </div>
         <div className="contuct__us__right"></div>

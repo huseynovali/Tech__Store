@@ -4,7 +4,7 @@ function ContactUsForm() {
   return (
     <div>
       <div className="input__group flex flex-col md:flex-row pt-6">
-        <div className="w-1/2 pr-5">
+        <div className="md:w-1/2 w-full md:pr-5 py-2 ">
           <label htmlFor="name" className="text-xs pb-2 block font-semibold">
             Your Name *
           </label>
@@ -15,7 +15,7 @@ function ContactUsForm() {
           />
         </div>
 
-        <div className="w-1/2">
+        <div className="md:w-1/2 w-full py-2 ">
           <label htmlFor="email" className="text-xs pb-2 block font-semibold">
             Your Email *
           </label>
@@ -26,17 +26,17 @@ function ContactUsForm() {
           />
         </div>
       </div>
-      <div className="w-1/2 pr-5 pt-5">
+      <div className="md:w-1/2 w-full  md:pt-5 py-2 ">
         <label htmlFor="phone" className="text-xs pb-2 block font-semibold">
           Your Phone Number
         </label>
         <input
           type="text"
-          placeholder="Your Phone Number"
+          placeholder="Your Phone Number "
           className="w-full border rounded-[4px] border-[#A2A6B0] p-2"
         />
       </div>
-      <div className=" pt-5">
+      <div className=" pt-5 py-2 ">
         <label htmlFor="phone" className="text-xs pb-2 block font-semibold">
           What’s on your mind? *
         </label>
