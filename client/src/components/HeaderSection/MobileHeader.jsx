@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MobileAccoundPopover from "./MobileAccoundPopover";
 import MobileSidebar from "./MobileSidebar";
+import { Link } from "react-router-dom";
 
 function MobileHeader() {
   const [isOpenSidebar, setIsOpenSidebar] = useState(false);
@@ -12,18 +13,20 @@ function MobileHeader() {
   return (
     <div className="relative flex py-3 w-full">
       <div className="logo absolute -top-7 bg-[#0156FF] w-16 h-9 rounded-t-full flex justify-center -z-1">
-        <svg
-          width="46"
-          height="46"
-          viewBox="0 0 85 69"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M42.0331 13.9453L25.2969 23.8636V36.0707L42.0331 45.989L55.4588 38.3596V41.9836L42.0331 49.9945L25.2969 39.8855V44.2724L42.0331 54L58.7693 44.2724V32.0653L45.3435 39.8855V36.0707L58.7693 28.0598V23.8636L42.0331 13.9453Z"
-            fill="#ffF"
-          />
-        </svg>
+        <Link to={'/home'}>
+          <svg
+            width="46"
+            height="46"
+            viewBox="0 0 85 69"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M42.0331 13.9453L25.2969 23.8636V36.0707L42.0331 45.989L55.4588 38.3596V41.9836L42.0331 49.9945L25.2969 39.8855V44.2724L42.0331 54L58.7693 44.2724V32.0653L45.3435 39.8855V36.0707L58.7693 28.0598V23.8636L42.0331 13.9453Z"
+              fill="#ffF"
+            />
+          </svg>
+        </Link>
       </div>
 
       <div className="header__components flex items-center w-full">

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../Container";
 import ShopInfo from "./ShopInfo";
+import { Link } from "react-router-dom";
 
 function TopInfo() {
   return (
@@ -14,12 +15,12 @@ function TopInfo() {
           <p className="text-[#ACACAC] hidden lg:block">
             Visit our showroom in 1234 Street Adress City Address, 1234
           </p>
-          <a
-            href="#"
+          <Link 
+          to={'contact us'}
             className="text-white text-bold text-xs relative after:content-[''] after:h-[1px] after:w-full after:absolute after:left-0 after:-bottom-1 after:bg-white mx-1"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="social__links text-white text-xs   hidden lg:flex items-center">
