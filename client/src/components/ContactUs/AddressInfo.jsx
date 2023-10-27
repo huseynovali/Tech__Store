@@ -2,7 +2,7 @@ import React from "react";
 
 function AddressInfo() {
   return (
-    <div className="px-8 py-7 bg-[#F5F7FF] max-h-fit">
+    <div className="px-8 py-7 bg-[#F5F7FF] max-h-fit w-[400px] h-[400px]">
       <ul>
         <li className="flex">
           <svg
@@ -17,7 +17,7 @@ function AddressInfo() {
               fill="black"
             />
           </svg>
-          <div>
+          <div className="pl-2">
             <p className="text-lg  font-semibold">Address:</p>
             <p className="text-xs ">1234 Street Adress City Address, 1234</p>
           </div>
@@ -41,7 +41,7 @@ function AddressInfo() {
               fill="black"
             />
           </svg>
-          <div>
+          <div className="pl-2">
             <p className="text-lg  font-semibold">Phone:</p>
             <p className="text-xs ">(00)1234 5678</p>
           </div>
@@ -67,12 +67,43 @@ function AddressInfo() {
               stroke-linecap="round"
             />
           </svg>
-          <div>
+          <div className="pl-2">
             <p className="text-lg  font-semibold">We are open:</p>
             <p className="text-xs ">
-              <span className="block">Monday - Thursday: 9:00 AM - 5:30 PM </span>
+              <span className="block">
+                Monday - Thursday: 9:00 AM - 5:30 PM{" "}
+              </span>
               <span className="block">Friday 9:00 AM - 6:00 PM</span>
               <span className="block">Saturday: 11:00 AM - 5:00 PM</span>
+            </p>
+          </div>
+        </li>
+
+        <li className="flex py-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+          >
+            <path
+              d="M17.5 28.85C11.2429 28.85 6.15 23.7571 6.15 17.5C6.15 11.2429 11.2429 6.15 17.5 6.15C23.7571 6.15 28.85 11.2429 28.85 17.5C28.85 23.7571 23.7571 28.85 17.5 28.85Z"
+              stroke="black"
+              stroke-width="2.3"
+            />
+            <path
+              d="M11.5 21.4646V13.9L17.5 18.1L23.5 13.9V21.4646"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div className="pl-2">
+            <p className="text-lg  font-semibold">E-mail:</p>
+            <p className="text-xs ">
+              <a href="#" className="text-[#0156FF]">shop@email.com</a>
             </p>
           </div>
         </li>
