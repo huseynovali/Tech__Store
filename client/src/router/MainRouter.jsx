@@ -8,6 +8,7 @@ import ProductAbout from "../components/ProductDetail.jsx/ProductAbout";
 import CompDetailTab from "../components/ProductDetail.jsx/CompDetailTab";
 import CompSpecs from "../components/ProductDetail.jsx/CompSpecs";
 import ContactUs from "../page/ContactUs";
+import Login from "../page/Login";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -41,6 +42,7 @@ export default function MainRoutes() {
           path:'contact us',
           element:<ContactUs/>
         },
+
         {
           element: <PrivateRoutes />,
           children: [
@@ -61,7 +63,7 @@ export default function MainRoutes() {
           children: [
             {
               path: "login",
-              element: <h1>Login</h1>,
+              element: <Login/>,
             },
           ],
         },

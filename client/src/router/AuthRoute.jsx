@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
-import { Navigate } from "react-router";
+import { Navigate, Outlet } from "react-router";
 
 function AuthRoutes() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const [isTrue, setIsTrue] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsTrue(true);
-      setLoading(false);
-    }, 1000);
+    // setTimeout(() => {
+    //   setIsTrue(true);
+    //   setLoading(false);
+    // }, 1000);
   }, []);
 
   if (loading) {

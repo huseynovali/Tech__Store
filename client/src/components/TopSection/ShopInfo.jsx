@@ -30,7 +30,7 @@ function ShopInfo() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute  z-10  mt-1 lg:mt-3  w-screen md:max-w-[300px] lg:max-w-[260px]  transform  bg-white  -left-3 md:left-0">
+            <Popover.Panel className="absolute  z-50  mt-1 lg:mt-3  w-screen md:max-w-[300px] lg:max-w-[260px]  transform  bg-white  -left-3 md:left-0">
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="We__are__open flex p-2">
                   <div>
