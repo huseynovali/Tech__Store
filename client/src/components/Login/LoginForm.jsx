@@ -63,7 +63,7 @@ function LoginForm() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#0156FF] px-16 py-3 rounded-[50px] text-white text-sm mb-2 mt-6"
+                className="bg-[#0156FF] px-8 md:px-16 py-3 rounded-[50px] text-white text-sm mb-2 mt-6"
               >
                 Submit
               </Button>
