@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
+import classNames from "classnames";
 
 const Country = [
   { name: "Wade Cooper" },
@@ -9,10 +10,11 @@ const Country = [
   { name: "Tanya Fox" },
   { name: "Hellen Schmidt" },
 ];
+const Pickup = ["Standard Rate", "Pickup from store"];
 
 function DeliveryInfo() {
   const [selected, setSelected] = useState(Country[0]);
-
+  const [check, setCheck] = useState(Pickup[0]);
   return (
     <div>
       {/* country select box  */}
@@ -107,6 +109,42 @@ function DeliveryInfo() {
           id="zip"
           className="w-full p-3 border border-[#A2A6B0] rounded"
         />
+      </div>
+      <div>
+        <div className="py-3">
+          {Pickup.map((item) => (
+            <div key={item}>
+              <p className="text-sm text-black font-semibold py-3">{item}</p>
+              <div className="flex">
+                <div
+                  className={
+                    "relative rounded-full border-2  p-[2px] w-[25px] h-[25px] shrink-0 border-[#0156FF]  "
+                  }
+                >
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    className="absolute w-full h-full opacity-0"
+                    onChange={() => setCheck(item)}
+                  />
+                  <div
+                    className={classNames(
+                      " rounded-full w-[18px] h-[18px] shrink-0",
+                      item == check ? " bg-[#0156FF] " : "bg-[#F5F7FF] "
+                    )}
+                  ></div>
+                </div>
+
+                <p className=" text-sm text-black pl-2">
+                  {item == "Standard Rate"
+                    ? " Price may vary depending on the item/destination. Shop Staff will contact you. $21.00"
+                    : "1234 Street Adress City Address, 1234 $0.00"}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
