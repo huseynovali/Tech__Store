@@ -2,9 +2,9 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import Button from "../Buttons/Button";
 import DeliveryInfo from "./DeliveryInfo";
+import DicountCode from "./DicountCode";
 
 function CartPayment() {
-
   return (
     <div>
       <p className="text-lg md:text-2xl font-semibold  md:py-4 ">Summary</p>
@@ -37,7 +37,7 @@ function CartPayment() {
               </div>
             </Disclosure.Button>
             <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-               <DeliveryInfo/>
+              <DeliveryInfo />
             </Disclosure.Panel>
           </>
         )}
@@ -45,7 +45,7 @@ function CartPayment() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className=" w-full  text-left flex py-5 justify-between">
+            <Disclosure.Button className=" w-full  text-left flex pt-5 justify-between">
               <div>
                 <p className="pb-2">Apply Discount Code</p>
               </div>
@@ -70,14 +70,14 @@ function CartPayment() {
                 </svg>
               </div>
             </Disclosure.Button>
-            <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-              If you're unhappy with your purchase for any reason, email us
-              within 90 days and we'll refund you in full, no questions asked.
+            <Disclosure.Panel className=" pb-2 text-sm ">
+              <DicountCode />
             </Disclosure.Panel>
           </>
         )}
       </Disclosure>
-
+      
+      <div className="border my-2"></div>
       <div>
         <p className="flex justify-between font-bold text-sm py-3">
           Subtotal <span>$1254</span>
