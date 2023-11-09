@@ -16,7 +16,7 @@ function CartComp() {
         Shopping Cart
       </p>
       <div>
-        <div className="left">
+        <div className="left w-[70%]">
           <table className="table-fixed text-left mt-7">
             <thead>
               <tr>
@@ -27,6 +27,10 @@ function CartComp() {
                 <th></th>
               </tr>
             </thead>
+     
+
+
+           
               <CartList/>
           </table>
         </div>
