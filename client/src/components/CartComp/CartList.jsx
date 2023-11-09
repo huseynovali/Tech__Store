@@ -70,7 +70,9 @@ function CartList() {
                 </div>
               </div>
             </td>
-            <td className="md:px-12 px-4 py-5 align-top">{item.quality*item.nowPrice}</td>
+            <td className="md:px-12 px-4 py-5 align-top">
+              {item.quality * item.nowPrice}
+            </td>
             <td className="md:px-12  py-5 align-top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,8 +128,56 @@ function CartList() {
 
           <tr className="border-b my-5  w-full  md:hidden">
             <td className="md:px-12  py-5  align-top">{item.nowPrice}</td>
-            <td className="md:px-12 px-4 py-5 align-top">{item.quality}</td>
-            <td className="md:px-12 px-4 py-5 align-top">1961</td>
+            <td className="md:px-12 px-4 py-5 align-top">
+              <div className="number__input__group relative ml-2">
+                <input
+                  type="number"
+                  min={0}
+                  // change real data
+                  value={item.quality}
+                  onChange={handleInputChange}
+                  className="border-none outline-none bg-[#F5F7FF] w-[70px] h-[50px] py-2 px-3 "
+                />
+                <div className="buttons__number__input  absolute right-0 top-0 max-w-min h-full">
+                  <div className="top__btn z-10 h-1/2 flex items-end">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M6 9L8 7L10 9"
+                        stroke="#A2A6B0"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="bottom__btn z-10 h-1/2 flex items-start cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M10 7L8 9L6 7"
+                        stroke="#A2A6B0"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td className="md:px-12 px-4 py-5 align-top">
+              {" "}
+              {item.quality * item.nowPrice}
+            </td>
             <td className="md:px-12  py-5 align-top">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
