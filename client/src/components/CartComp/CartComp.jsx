@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router";
 import CartList from "./CartList";
+import CartPayment from "./CartPayment";
 
 function CartComp() {
   const location = useLocation();
@@ -14,8 +15,8 @@ function CartComp() {
       <p className="text-lg md:text-4xl font-semibold py-2 md:py-4 ">
         Shopping Cart
       </p>
-      <div>
-        <div className="left md:w-[70%]">
+      <div className="flex">
+        <div className="left md:w-[70%] pr-5">
           <table className="table-fixed text-left mt-7">
             <thead className="hidden md:table-header-group">
               <tr className="border-b ">
@@ -47,7 +48,9 @@ function CartComp() {
             </div>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right bg-[#F5F7FF] py-4 px-7 w-[30%]">
+            <CartPayment/>
+        </div>
       </div>
     </div>
   );
