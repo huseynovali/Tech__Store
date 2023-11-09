@@ -8,7 +8,6 @@ function CartComp() {
     .replaceAll("/", " > ")
     .slice(2);
 
-
   return (
     <div className="py-5">
       <p className="capitalize">{url}</p>
@@ -27,11 +26,18 @@ function CartComp() {
                 <th></th>
               </tr>
             </thead>
-     
-
-
-           
-              <CartList/>
+            <tbody>
+              <CartList />
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
           </table>
         </div>
         <div className="right"></div>
