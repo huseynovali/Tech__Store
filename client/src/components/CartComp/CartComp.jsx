@@ -15,7 +15,7 @@ function CartComp() {
       <p className="text-lg md:text-4xl font-semibold py-2 md:py-4 ">
         Shopping Cart
       </p>
-      <div className="flex">
+      <div className="md:flex">
         <div className="left md:w-[70%] pr-5">
           <table className="table-fixed text-left mt-7">
             <thead className="hidden md:table-header-group">
@@ -48,7 +48,7 @@ function CartComp() {
             </div>
           </div>
         </div>
-        <div className="right bg-[#F5F7FF] py-4 px-7 w-[30%]">
+        <div className="right bg-[#F5F7FF] py-4 px-7 md:w-[30%]">
             <CartPayment/>
         </div>
       </div>
