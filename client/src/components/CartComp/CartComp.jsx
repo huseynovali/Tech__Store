@@ -29,24 +29,24 @@ function CartComp() {
             <tbody>
               <CartList />
             </tbody>
-            <div className="w-full">
-              <div className="w-[200%] h-[1px] bg-[#CACDD8]  block my-6 "></div>
-
-              <div className="flex justify-between items-center w-[200%]">
-                <div className="flex items-center w-[50%]">
-                  <button className="px-7 py-2 border-2 border-[#A2A6B0] rounded-[50px] text-sm">
-                    Continue Shopping
-                  </button>
-                  <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3">
-                    Clear Shopping Cart
-                  </button>
-                </div>
-                <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3">
-                  Update Shopping Cart
-                </button>
-              </div>
-            </div>
+            <div className="w-full"></div>
           </table>
+          <div className="flex justify-between items-center pt-5">
+            <div className="items-center lg:w-[70%] hidden lg:flex">
+              <button className="px-7 py-2 border-2 border-[#A2A6B0] rounded-[50px] text-sm">
+                Continue Shopping
+              </button>
+              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3">
+                Clear Shopping Cart
+              </button>
+            </div>
+            <div>
+                   <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3 w-full">
+              Update Shopping Cart
+            </button>
+            </div>
+         
+          </div>
         </div>
         <div className="right"></div>
       </div>
