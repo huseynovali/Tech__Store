@@ -17,7 +17,7 @@ function CartComp() {
       <div>
         <div className="left md:w-[70%]">
           <table className="table-fixed text-left mt-7">
-            <thead>
+            <thead className="hidden md:table-header-group">
               <tr className="border-b ">
                 <th>Item</th>
                 <th className="px-12 py-2">Price</th>
@@ -31,7 +31,7 @@ function CartComp() {
             </tbody>
             <div className="w-full"></div>
           </table>
-          <div className="flex justify-between items-center pt-5">
+          <div className="md:flex md:justify-between md:items-center pt-5">
             <div className="items-center lg:w-[70%] hidden lg:flex">
               <button className="px-7 py-2 border-2 border-[#A2A6B0] rounded-[50px] text-sm">
                 Continue Shopping
@@ -40,8 +40,8 @@ function CartComp() {
                 Clear Shopping Cart
               </button>
             </div>
-            <div>
-              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3 w-full">
+            <div className="flex justify-center">
+              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white md:ml-3 w-[80%] m-auto">
                 Update Shopping Cart
               </button>
             </div>

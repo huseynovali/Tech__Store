@@ -8,8 +8,10 @@ function CartList() {
     <>
       {data.map((item) => (
         <>
-      
-          <tr key={item.id} className=" md:border-b md:my-5 w-full md:block-table">
+          <tr
+            key={item.id}
+            className=" md:border-b md:my-5 w-full hidden md:table-row"
+          >
             <td className="flex pr-7 py-5" colSpan={3}>
               <img
                 src={item.photo}
@@ -53,7 +55,20 @@ function CartList() {
             </td>
           </tr>
 
-          {/* <tr>
+          <tr key={item.id} className="  w-full  md:hidden">
+            <td>
+              <img
+                src={item.photo}
+                alt=""
+                className="w-[68px] h-[68px] md:w-[120px] md:h-[120px] shrink-0"
+              />
+            </td>
+            <td className=" pr-7 py-5" colSpan={3}>
+              {item.text}
+            </td>
+          </tr>
+
+          <tr className="  w-full  md:hidden">
             <th className="md:px-12 py-2">Price</th>
             <th className="md:px-12 px-4 py-2">Qty</th>
             <th className="md:px-12 px-4 py-2">Subtotal</th>
@@ -61,7 +76,7 @@ function CartList() {
             <th></th>
           </tr>
 
-          <tr>
+          <tr className="border-b my-5  w-full  md:hidden">
             <td className="md:px-12  py-5  align-top">{item.nowPrice}</td>
             <td className="md:px-12 px-4 py-5 align-top">{item.quality}</td>
             <td className="md:px-12 px-4 py-5 align-top">1961</td>
@@ -95,7 +110,7 @@ function CartList() {
                 />
               </svg>
             </td>
-          </tr> */}
+          </tr>
         </>
       ))}
     </>
