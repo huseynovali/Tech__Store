@@ -41,15 +41,15 @@ function CartComp() {
                 Clear Shopping Cart
               </button>
             </div>
-            <div className="flex justify-center">
-              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white md:ml-3 w-[80%] m-auto">
+            <div className="flex justify-center ">
+              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white md:ml-3 w-[80%] md:w-full m-auto">
                 Update Shopping Cart
               </button>
             </div>
           </div>
         </div>
         <div className="right bg-[#F5F7FF] py-4 px-7 md:w-[35%]">
-            <CartPayment/>
+          <CartPayment />
         </div>
       </div>
     </div>
