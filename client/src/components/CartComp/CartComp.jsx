@@ -15,14 +15,14 @@ function CartComp() {
         Shopping Cart
       </p>
       <div>
-        <div className="left w-[70%]">
+        <div className="left md:w-[70%]">
           <table className="table-fixed text-left mt-7">
             <thead>
-              <tr>
+              <tr className="border-b ">
                 <th>Item</th>
-                <th className="px-12">Price</th>
-                <th className="px-12">Qty</th>
-                <th className="px-12">Subtotal</th>
+                <th className="px-12 py-2">Price</th>
+                <th className="px-12 py-2">Qty</th>
+                <th className="px-12 py-2">Subtotal</th>
                 <th></th>
               </tr>
             </thead>
@@ -41,11 +41,10 @@ function CartComp() {
               </button>
             </div>
             <div>
-                   <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3 w-full">
-              Update Shopping Cart
-            </button>
+              <button className="px-7 py-2 border-2  rounded-[50px] text-sm bg-black text-white ml-3 w-full">
+                Update Shopping Cart
+              </button>
             </div>
-         
           </div>
         </div>
         <div className="right"></div>
