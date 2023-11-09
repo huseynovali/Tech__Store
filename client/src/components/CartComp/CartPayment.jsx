@@ -3,6 +3,7 @@ import { Disclosure } from "@headlessui/react";
 import Button from "../Buttons/Button";
 
 function CartPayment() {
+
   return (
     <div>
       <p className="text-lg md:text-2xl font-semibold  md:py-4 ">Summary</p>
@@ -196,9 +197,7 @@ function CartPayment() {
           <div className="line w-[2px] h-6 mx-3 bg-[#00AEB8] hidden lg:block"></div>
           <p className="text-[#272560] text-xs">
             <b>own</b> it now, up to 6 months interest free{"  "}
-            <span className="text-[#272560] underline ">
-              learn more
-            </span>
+            <span className="text-[#272560] underline ">learn more</span>
           </p>
         </div>
       </div>
