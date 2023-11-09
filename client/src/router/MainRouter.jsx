@@ -9,6 +9,7 @@ import CompDetailTab from "../components/ProductDetail.jsx/CompDetailTab";
 import CompSpecs from "../components/ProductDetail.jsx/CompSpecs";
 import ContactUs from "../page/ContactUs";
 import Login from "../page/Login";
+import Cart from "../page/Cart";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -39,10 +40,13 @@ export default function MainRoutes() {
           ],
         },
         {
-          path:'contact us',
-          element:<ContactUs/>
+          path: "contact us",
+          element: <ContactUs />,
         },
-
+        {
+          path: "cart",
+          element: <Cart />,
+        },
         {
           element: <PrivateRoutes />,
           children: [
@@ -63,7 +67,7 @@ export default function MainRoutes() {
           children: [
             {
               path: "login",
-              element: <Login/>,
+              element: <Login />,
             },
           ],
         },
