@@ -4,6 +4,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import classNames from "classnames";
 import ListBoxCom from "./ListBoxCom";
+import { useLocation, useNavigate } from "react-router";
 
 const Country = [
   { name: "Azerbaijan" },
@@ -41,7 +42,7 @@ function CheckoutForm() {
   const [selectedCountry, setSelectedCountry] = useState(Country[0]);
   const [selectedState, setSelectedState] = useState(State[0]);
   const [check, setCheck] = useState(Pickup[0]);
-
+  const navigate = useNavigate();
   return (
     <div>
       <div className="shoping__address pt-12">
@@ -65,6 +66,7 @@ function CheckoutForm() {
           onSubmit={(values) => {
             // Form gönderildiğinde yapılacak işlemler
             console.log(values);
+            navigate("payment");
             // Örneğin, formu sunucuya gönderme veya başka bir işlem...
           }}
         >

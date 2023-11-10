@@ -12,6 +12,7 @@ import Login from "../page/Login";
 import Cart from "../page/Cart";
 import Checkout from "../page/Checkout";
 import CheckoutForm from "../components/CheckoutComp/CheckoutForm";
+import Payment from "../components/CheckoutComp/Payment";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -49,20 +50,7 @@ export default function MainRoutes() {
           path: "cart",
           element: <Cart />,
         },
-        {
-          path: "checkout",
-          element: <Checkout />,
-          children: [
-            {
-              index: true,
-              element: <CheckoutForm />,
-            },
-            {
-              path: "payment",
-              element: <>asdas</>,
-            },
-          ],
-        },
+
         {
           element: <PrivateRoutes />,
           children: [
@@ -73,6 +61,20 @@ export default function MainRoutes() {
                 {
                   path: "accound",
                   element: <h1>accound</h1>,
+                },
+              ],
+            },
+            {
+              path: "checkout",
+              element: <Checkout />,
+              children: [
+                {
+                  index: true,
+                  element: <CheckoutForm />,
+                },
+                {
+                  path: "payment",
+                  element: <Payment />,
                 },
               ],
             },
