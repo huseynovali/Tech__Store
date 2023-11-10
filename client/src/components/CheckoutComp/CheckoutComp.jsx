@@ -11,9 +11,11 @@ const Country = [
   { name: "Tanya Fox" },
   { name: "Hellen Schmidt" },
 ];
+const Pickup = ["Standard Rate", "Pickup from store"];
 function CheckoutComp() {
   const location = useLocation();
   const [selected, setSelected] = useState(Country[0]);
+  const [check, setCheck] = useState(Pickup[0]);
   const url = decodeURIComponent(location.pathname)
     .replaceAll("/", " > ")
     .slice(2);
@@ -227,9 +229,52 @@ function CheckoutComp() {
               <input type="text" className="w-full py-2  border" />
             </div>
           </div>
-          <div className="w-full border  mb-10"></div>
+          <div className="w-full border  my-10"></div>
+          <div className="">
+            {Pickup.map((item) => (
+              <div key={item}>
+                <p className="text-sm text-black font-semibold py-3">{item}</p>
+                <div className="flex">
+                  <div
+                    className={
+                      "relative rounded-full border-2  p-[2px] w-[25px] h-[25px] shrink-0 border-[#0156FF]  "
+                    }
+                  >
+                    <input
+                      type="checkbox"
+                      name=""
+                      id=""
+                      className="absolute w-full h-full opacity-0"
+                      onChange={() => setCheck(item)}
+                    />
+                    <div
+                      className={classNames(
+                        " rounded-full w-[18px] h-[18px] shrink-0",
+                        item == check ? " bg-[#0156FF] " : "bg-[#F5F7FF] "
+                      )}
+                    ></div>
+                  </div>
 
-          
+                  <div className=" text-sm text-black pl-2 flex justify-between w-[70%]">
+                    {item == "Standard Rate" ? (
+                      <>
+                        <p>
+                          " Price may vary depending on the item/destination.
+                          Shop Staff will contact you. $21.00"
+                        </p>
+                        <span>$21.00</span>
+                      </>
+                    ) : (
+                      <>
+                        <p>1234 Street Adress City Address, 1234 $0.00</p>
+                        <span>$00.00</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="right"></div>
