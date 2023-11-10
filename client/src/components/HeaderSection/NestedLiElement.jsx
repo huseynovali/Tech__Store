@@ -20,8 +20,8 @@ function NestedLiElement() {
               <path
                 d="M0.845703 1L2.8457 3.13407L0.845704 5.26814"
                 stroke="black"
-                stroke-width="1.6"
-                stroke-linecap="round"
+                strokeWidth="1.6"
+                strokeLinecap="round"
               />
             </svg>
           </a>
@@ -43,8 +43,8 @@ function NestedLiElement() {
                     <path
                       d="M0.845703 1L2.8457 3.13407L0.845704 5.26814"
                       stroke="black"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </a>
@@ -105,8 +105,8 @@ function NestedLiElement() {
               <path
                 d="M0.845703 1L2.8457 3.13407L0.845704 5.26814"
                 stroke="black"
-                stroke-width="1.6"
-                stroke-linecap="round"
+                strokeWidth="1.6"
+                strokeLinecap="round"
               />
             </svg>
           </a>

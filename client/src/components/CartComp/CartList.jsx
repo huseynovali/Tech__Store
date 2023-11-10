@@ -10,11 +10,8 @@ function CartList() {
   return (
     <>
       {data.map((item) => (
-        <>
-          <tr
-            key={item.id}
-            className=" md:border-b md:my-5 w-full hidden md:table-row"
-          >
+        <React.Fragment key={`visible-${item.id}-1`}>
+          <tr className=" md:border-b md:my-5 w-full hidden md:table-row">
             <td className="flex pr-7 py-5" colSpan={3}>
               <img
                 src={item.photo}
@@ -46,8 +43,8 @@ function CartList() {
                       <path
                         d="M6 9L8 7L10 9"
                         stroke="#A2A6B0"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>
@@ -62,8 +59,8 @@ function CartList() {
                       <path
                         d="M10 7L8 9L6 7"
                         stroke="#A2A6B0"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>
@@ -87,25 +84,25 @@ function CartList() {
                   r="12.4882"
                   fill="white"
                   stroke="#CACDD8"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <path
                   d="M9.44177 9.44183L18.2091 18.2092"
                   stroke="#A2A6B0"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M18.2091 9.44183L9.44178 18.2092"
                   stroke="#A2A6B0"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </td>
           </tr>
 
-          <tr key={item.id} className="  w-full  md:hidden">
+          <tr className="  w-full  md:hidden">
             <td>
               <img
                 src={item.photo}
@@ -118,7 +115,7 @@ function CartList() {
             </td>
           </tr>
 
-          <tr className="  w-full  md:hidden">
+          <tr className="w-full  md:hidden">
             <th className="md:px-12 py-2">Price</th>
             <th className="md:px-12 px-4 py-2">Qty</th>
             <th className="md:px-12 px-4 py-2">Subtotal</th>
@@ -150,8 +147,8 @@ function CartList() {
                       <path
                         d="M6 9L8 7L10 9"
                         stroke="#A2A6B0"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>
@@ -166,8 +163,8 @@ function CartList() {
                       <path
                         d="M10 7L8 9L6 7"
                         stroke="#A2A6B0"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>
@@ -192,24 +189,24 @@ function CartList() {
                   r="12.4882"
                   fill="white"
                   stroke="#CACDD8"
-                  stroke-width="2"
+                  strokeWidth="2"
                 />
                 <path
                   d="M9.44177 9.44183L18.2091 18.2092"
                   stroke="#A2A6B0"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M18.2091 9.44183L9.44178 18.2092"
                   stroke="#A2A6B0"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
             </td>
           </tr>
-        </>
+        </React.Fragment>
       ))}
     </>
   );

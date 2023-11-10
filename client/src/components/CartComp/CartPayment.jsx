@@ -30,8 +30,8 @@ function CartPayment() {
                   <path
                     d="M6 9.20209L8 7.20209L10 9.20209"
                     stroke="black"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
@@ -64,8 +64,8 @@ function CartPayment() {
                   <path
                     d="M6 9.20209L8 7.20209L10 9.20209"
                     stroke="black"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
@@ -157,7 +157,7 @@ function CartPayment() {
               viewBox="0 0 59 21"
               fill="none"
             >
-              <g clip-path="url(#clip0_133_4184)">
+              <g clipPath="url(#clip0_133_4184)">
                 <path
                   d="M20.9062 7.86422L16.1837 12.0733H4.48756C3.39659 12.0718 2.34278 12.4659 1.52484 13.1812L7.42392 7.92211L7.51443 7.84265L14.9052 1.24865C16.0969 0.18653 17.77 -0.164992 19.2942 0.326501C20.8184 0.817994 21.9622 2.07783 22.2947 3.63145C22.6272 5.18506 22.0979 6.79642 20.9062 7.85854V7.86422Z"
                   fill="#F15B41"

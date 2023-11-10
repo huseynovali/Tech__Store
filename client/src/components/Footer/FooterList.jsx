@@ -8,7 +8,7 @@ function FooterList() {
         <ul className="text-white">
           <p className="opacity-50 pb-3">Information</p>
           {footerData.Information.map((item) => (
-            <li>
+            <li key={item.title}>
               <a href="#" className="text-sm ">
                 {item.title}
               </a>
@@ -18,7 +18,7 @@ function FooterList() {
         <ul className="text-white">
           <p className="opacity-50 pb-3">PC Parts</p>
           {footerData.PC_Parts.map((item) => (
-            <li>
+            <li key={item.title}>
               <a href="#" className="text-sm ">
                 {item.title}
               </a>
@@ -28,7 +28,7 @@ function FooterList() {
         <ul className="text-white">
           <p className="opacity-50 pb-3">Desktop PCs</p>
           {footerData.Desktop_PCs.map((item) => (
-            <li>
+            <li key={item.title}>
               <a href="#" className="text-sm ">
                 {item.title}
               </a>
@@ -38,7 +38,7 @@ function FooterList() {
         <ul className="text-white">
           <p className="opacity-50 pb-3">Laptops</p>
           {footerData.Laptops.map((item) => (
-            <li>
+            <li key={item.title}>
               <a href="#" className="text-sm ">
                 {item.title}
               </a>

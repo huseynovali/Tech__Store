@@ -24,13 +24,15 @@ function DesktopHeaderLinks() {
               {/* top right */}
               <div className="right flex py-5 px-5 gap-5">
                 {popComp.map((item, index) => (
-                 <ProductCard data={item}/>
+                  <div key={index}>
+                    <ProductCard data={item} />
+                  </div>
                 ))}
               </div>
             </div>
             {/* brand img */}
             <div className="comp__category border-0 border-t-2 border-[#CACDD8] ">
-             <BrandList/>
+              <BrandList />
             </div>
           </div>
         </li>

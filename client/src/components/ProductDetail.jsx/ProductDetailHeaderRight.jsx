@@ -41,8 +41,8 @@ function ProductDetailHeaderRight() {
                   <path
                     d="M6 9L8 7L10 9"
                     stroke="#A2A6B0"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
@@ -57,8 +57,8 @@ function ProductDetailHeaderRight() {
                   <path
                     d="M10 7L8 9L6 7"
                     stroke="#A2A6B0"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>

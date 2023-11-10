@@ -30,7 +30,7 @@ function CartComp() {
             <tbody>
               <CartList />
             </tbody>
-            <div className="w-full"></div>
+  
           </table>
           <div className="md:flex md:justify-between md:items-center pt-5">
             <div className="items-center lg:w-[70%] hidden lg:flex">

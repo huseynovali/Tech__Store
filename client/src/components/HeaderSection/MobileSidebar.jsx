@@ -44,14 +44,14 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                   <path
                     d="M1.80585 1L13.7258 12.9199"
                     stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M13.7258 1L1.80585 12.9199"
                     stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
                   />
                 </svg>
               </button>
@@ -74,8 +74,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -96,8 +96,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -118,8 +118,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -142,8 +142,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -164,8 +164,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -186,8 +186,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>
@@ -208,8 +208,8 @@ function MobileSidebar({ isOpenSidebar, setIsOpenSidebar }) {
                       <path
                         d="M7.76581 6.39648L9.76581 8.39648L7.76581 10.3965"
                         stroke="black"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </a>

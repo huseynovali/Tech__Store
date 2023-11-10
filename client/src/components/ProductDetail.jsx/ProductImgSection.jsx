@@ -15,11 +15,11 @@ function ProductImgSection() {
             viewBox="0 0 30 30"
             fill="none"
           >
-            <circle cx="15" cy="15" r="14" stroke="#A2A6B0" stroke-width="2" />
+            <circle cx="15" cy="15" r="14" stroke="#A2A6B0" strokeWidth="2" />
             <path
               d="M14.6851 11.8254L15.3954 12.5419L16.1056 11.8254C16.7788 11.1462 17.8139 10.375 18.8922 10.375C19.9606 10.375 20.8026 10.7307 21.3714 11.278C21.9374 11.8225 22.2936 12.6141 22.2936 13.6095C22.2936 14.6805 21.8643 15.5925 21.1287 16.4761C20.3739 17.3829 19.3563 18.1913 18.2509 19.0643L18.2252 19.0846C17.2883 19.8241 16.2458 20.647 15.3958 21.5675C14.5542 20.655 13.5216 19.8387 12.593 19.1047L12.5424 19.0646L12.542 19.0643C11.4363 18.1911 10.4189 17.3825 9.66433 16.4757C8.92905 15.5921 8.5 14.6802 8.5 13.6095C8.5 12.6141 8.8562 11.8226 9.42223 11.278C9.99108 10.7308 10.8333 10.375 11.9021 10.375C12.9791 10.375 14.0111 11.1454 14.6851 11.8254Z"
               stroke="#A2A6B0"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
         </div>
@@ -36,25 +36,25 @@ function ProductImgSection() {
               cy="15.4766"
               r="14"
               stroke="#A2A6B0"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <path
               d="M10.4199 21.5649V17.0792"
               stroke="#A2A6B0"
-              stroke-width="2.2"
-              stroke-linecap="round"
+              strokeWidth="2.2"
+              strokeLinecap="round"
             />
             <path
               d="M15 21.5649L15 8.16895"
               stroke="#A2A6B0"
-              stroke-width="2.2"
-              stroke-linecap="round"
+              strokeWidth="2.2"
+              strokeLinecap="round"
             />
             <path
               d="M19.6611 21.5649L19.6611 12.7233"
               stroke="#A2A6B0"
-              stroke-width="2.2"
-              stroke-linecap="round"
+              strokeWidth="2.2"
+              strokeLinecap="round"
             />
           </svg>
         </div>
@@ -71,19 +71,19 @@ function ProductImgSection() {
               cy="15.9535"
               r="14"
               stroke="#A2A6B0"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <path
               d="M21.6667 10.7877H8.33333C7.8731 10.7877 7.5 11.1608 7.5 11.6211V21.6211C7.5 22.0813 7.8731 22.4544 8.33333 22.4544H21.6667C22.1269 22.4544 22.5 22.0813 22.5 21.6211V11.6211C22.5 11.1608 22.1269 10.7877 21.6667 10.7877Z"
               stroke="#A2A6B0"
-              stroke-width="1.7"
-              stroke-linecap="round"
+              strokeWidth="1.7"
+              strokeLinecap="round"
             />
             <path
               d="M7.5 12.0377L15 16.6211L22.5 12.0377"
               stroke="#A2A6B0"
-              stroke-width="1.7"
-              stroke-linecap="round"
+              strokeWidth="1.7"
+              strokeLinecap="round"
             />
           </svg>
         </div>
@@ -99,7 +99,7 @@ function ProductImgSection() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_50_1170)">
+              <g clipPath="url(#clip0_50_1170)">
                 <path
                   d="M27.2846 10.1111L21.1213 15.5228H5.85683C4.43303 15.5209 3.05772 16.0276 1.99023 16.9472L9.68903 10.1856L9.80715 10.0834L19.4527 1.60541C21.008 0.239823 23.1915 -0.212134 25.1807 0.419786C27.17 1.05171 28.6627 2.6715 29.0967 4.669C29.5306 6.66651 28.8398 8.73825 27.2846 10.1038V10.1111Z"
                   fill="#F15B41"
