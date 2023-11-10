@@ -1,11 +1,11 @@
 import React from "react";
-import CheckoutComp from "../components/CheckoutComp/CheckoutComp";
 import Container from "../components/Container";
+import CheckoutLayout from "../layout/CheckoutLayout";
 
 function Checkout() {
   return (
     <Container >
-      <CheckoutComp />
+      <CheckoutLayout/>
     </Container>
   );
 }

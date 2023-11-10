@@ -1,17 +1,15 @@
 import React from "react";
-import { useLocation } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import { Link } from "react-router-dom";
 
-import CheckoutForm from "./CheckoutForm";
-
-function CheckoutComp() {
+function CheckoutLayout() {
   const location = useLocation();
 
   const url = decodeURIComponent(location.pathname)
     .replaceAll("/", " > ")
     .slice(2);
   return (
-    <div className="py-5">
+    <div className="">
       <div className="left w-[70%]">
         <p className="capitalize">{url}</p>
         <div className="flex items-center ">
@@ -25,11 +23,11 @@ function CheckoutComp() {
             Sign In
           </Link>
         </div>
-        <CheckoutForm />
+        <Outlet />
       </div>
       <div className="right"></div>
     </div>
   );
 }
 
-export default CheckoutComp;
+export default CheckoutLayout;

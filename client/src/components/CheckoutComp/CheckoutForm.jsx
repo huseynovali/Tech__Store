@@ -31,9 +31,9 @@ const validationSchema = Yup.object().shape({
   company: Yup.string().required("Required"),
   streetAddress: Yup.string().required("Required"),
   city: Yup.string().required("Required"),
-  state: Yup.string().required("Required"),
+  state: Yup.string(),
   zipCode: Yup.string().required("Required"),
-  country: Yup.string().required("Required"),
+  country: Yup.string(),
   phoneNumber: Yup.string().required("Required"),
 });
 
@@ -300,7 +300,10 @@ function CheckoutForm() {
               ))}
             </div>
 
-            <button className="px-20 py-3 bg-[#0156FF] text-white my-10 rounded-3xl">
+            <button
+              type="submit"
+              className="px-20 py-3 bg-[#0156FF] text-white my-10 rounded-3xl"
+            >
               Next
             </button>
           </Form>

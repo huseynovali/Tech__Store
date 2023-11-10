@@ -11,6 +11,7 @@ import ContactUs from "../page/ContactUs";
 import Login from "../page/Login";
 import Cart from "../page/Cart";
 import Checkout from "../page/Checkout";
+import CheckoutForm from "../components/CheckoutComp/CheckoutForm";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -51,6 +52,12 @@ export default function MainRoutes() {
         {
           path: "checkout",
           element: <Checkout />,
+          children:[
+            {
+              index:true,
+              element:<CheckoutForm/>
+            }
+          ]
         },
         {
           element: <PrivateRoutes />,
