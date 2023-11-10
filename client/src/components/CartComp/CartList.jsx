@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteCardProduct } from "../../Store/cardReducer";
 
 function CartList() {
   const data = useSelector((state) => state.cardReducer.cardProduct);
+  const dispatch = useDispatch();
   const [compCound, setCompCound] = useState(1);
   const handleInputChange = (e) => {
     setCompCound(e.target.value);
@@ -71,34 +73,36 @@ function CartList() {
               {item.quality * item.nowPrice}
             </td>
             <td className="md:px-12  py-5 align-top">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="27"
-                viewBox="0 0 27 27"
-                fill="none"
-              >
-                <circle
-                  cx="13.4882"
-                  cy="13.4883"
-                  r="12.4882"
-                  fill="white"
-                  stroke="#CACDD8"
-                  strokeWidth="2"
-                />
-                <path
-                  d="M9.44177 9.44183L18.2091 18.2092"
-                  stroke="#A2A6B0"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18.2091 9.44183L9.44178 18.2092"
-                  stroke="#A2A6B0"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <button onClick={() => dispatch(deleteCardProduct(item.id))}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <circle
+                    cx="13.4882"
+                    cy="13.4883"
+                    r="12.4882"
+                    fill="white"
+                    stroke="#CACDD8"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M9.44177 9.44183L18.2091 18.2092"
+                    stroke="#A2A6B0"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M18.2091 9.44183L9.44178 18.2092"
+                    stroke="#A2A6B0"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
             </td>
           </tr>
 
@@ -176,34 +180,36 @@ function CartList() {
               {item.quality * item.nowPrice}
             </td>
             <td className="md:px-12  py-5 align-top">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="27"
-                height="27"
-                viewBox="0 0 27 27"
-                fill="none"
-              >
-                <circle
-                  cx="13.4882"
-                  cy="13.4883"
-                  r="12.4882"
-                  fill="white"
-                  stroke="#CACDD8"
-                  strokeWidth="2"
-                />
-                <path
-                  d="M9.44177 9.44183L18.2091 18.2092"
-                  stroke="#A2A6B0"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M18.2091 9.44183L9.44178 18.2092"
-                  stroke="#A2A6B0"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
+              <button onClick={() => dispatch(deleteCardProduct(item.id))}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <circle
+                    cx="13.4882"
+                    cy="13.4883"
+                    r="12.4882"
+                    fill="white"
+                    stroke="#CACDD8"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M9.44177 9.44183L18.2091 18.2092"
+                    stroke="#A2A6B0"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M18.2091 9.44183L9.44178 18.2092"
+                    stroke="#A2A6B0"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
             </td>
           </tr>
         </React.Fragment>
