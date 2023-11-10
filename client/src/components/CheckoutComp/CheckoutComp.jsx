@@ -227,6 +227,9 @@ function CheckoutComp() {
               <input type="text" className="w-full py-2  border" />
             </div>
           </div>
+          <div className="w-full border  mb-10"></div>
+
+          
         </div>
       </div>
       <div className="right"></div>
