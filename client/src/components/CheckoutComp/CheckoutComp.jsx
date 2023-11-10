@@ -262,12 +262,12 @@ function CheckoutComp() {
                           " Price may vary depending on the item/destination.
                           Shop Staff will contact you. $21.00"
                         </p>
-                        <span>$21.00</span>
+                        <span className="font-semibold">$21.00</span>
                       </>
                     ) : (
                       <>
                         <p>1234 Street Adress City Address, 1234 $0.00</p>
-                        <span>$00.00</span>
+                        <span className="font-semibold">$00.00</span>
                       </>
                     )}
                   </div>
