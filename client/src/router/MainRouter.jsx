@@ -52,12 +52,16 @@ export default function MainRoutes() {
         {
           path: "checkout",
           element: <Checkout />,
-          children:[
+          children: [
             {
-              index:true,
-              element:<CheckoutForm/>
-            }
-          ]
+              index: true,
+              element: <CheckoutForm />,
+            },
+            {
+              path: "payment",
+              element: <>asdas</>,
+            },
+          ],
         },
         {
           element: <PrivateRoutes />,
