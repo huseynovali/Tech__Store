@@ -274,7 +274,8 @@ function CheckoutComp() {
                 </div>
               </div>
             ))}
-          </div>
+          </div>{" "}
+          <button className="px-20 py-3 bg-[#0156FF] text-white my-10 rounded-3xl">Next</button>
         </div>
       </div>
       <div className="right"></div>
