@@ -1,4 +1,4 @@
-import { Outlet, useRoutes } from "react-router";
+import { useRoutes } from "react-router";
 import AuthRoutes from "./AuthRoute";
 import PrivateRoutes from "./privateRoute";
 import MainLayout from "../layout/MainLayout";
@@ -10,6 +10,7 @@ import CompSpecs from "../components/ProductDetail.jsx/CompSpecs";
 import ContactUs from "../page/ContactUs";
 import Login from "../page/Login";
 import Cart from "../page/Cart";
+import Checkout from "../page/Checkout";
 
 export default function MainRoutes() {
   const Routes = useRoutes([
@@ -46,6 +47,10 @@ export default function MainRoutes() {
         {
           path: "cart",
           element: <Cart />,
+        },
+        {
+          path: "checkout",
+          element: <Checkout />,
         },
         {
           element: <PrivateRoutes />,
