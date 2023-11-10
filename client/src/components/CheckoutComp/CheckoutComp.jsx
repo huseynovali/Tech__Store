@@ -51,7 +51,7 @@ function CheckoutComp() {
               <input type="text" className="w-full py-2  border mt-2" />
             </div>
             <div className="input__group py-2">
-              <label htmlFor="" className="block py-2">Company <span className="text-red-500">*</span></label>
+              <label htmlFor="" className="block py-2">City <span className="text-red-500">*</span></label>
               <input type="text" className="w-full py-2  border" />
             </div>
           </div>
