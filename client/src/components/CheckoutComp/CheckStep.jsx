@@ -45,7 +45,7 @@ function CheckStep() {
             />
           </svg>
         </div>
-        <p className="py-10  text-base">Shiping</p>
+        <p className="py-8  text-base">Shiping</p>
       </div>
       <div className="payment  relative text-center">
         {location.pathname.split("/").pop() == "payment" ? (
@@ -89,7 +89,7 @@ function CheckStep() {
                 />
               </svg>
             </div>
-            <p className="py-10  text-base min-w-full block">
+            <p className="py-8  text-base min-w-full block">
               Review & Payments
             </p>
           </>
@@ -125,7 +125,7 @@ function CheckStep() {
                 </text>
               </svg>
             </div>
-            <p className="py-10 text-base text-[#A2A6B0] block">
+            <p className="py-8 text-base text-[#A2A6B0] block">
               Review & Payments
             </p>
           </>

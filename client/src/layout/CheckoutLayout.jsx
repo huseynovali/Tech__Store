@@ -20,7 +20,7 @@ function CheckoutLayout() {
         </div>
         <Outlet />
       </div>
-      <div className="right py-20 px-3">
+      <div className="right py-20 px-3 w-[30%]">
         <CheckStep />
         <CheckoutCart/>
       </div>
