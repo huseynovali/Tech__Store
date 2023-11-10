@@ -5,13 +5,13 @@ import { addCart } from "../../Store/cardReducer";
 
 function ProductDetailHeaderRight() {
   const data = useSelector((state) => state.productReducer.ProductById);
-    const card = useSelector((state) => state.cardReducer.cardProduct);
-  console.log(card);
+  const card = useSelector((state) => state.cardReducer.cardProduct);
+
   const [compCound, setCompCound] = useState(1);
   const handleInputChange = (e) => {
     setCompCound(e.target.value);
   };
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -66,7 +66,10 @@ function ProductDetailHeaderRight() {
           </div>
           <div>
             <div className="pay__buttons flex ml-5 items-center">
-              <Button className="bg-[#0156FF] px-8 py-4 rounded-[50px] text-white text-sm " onClick={()=>dispatch(addCart({data,compCound})) }>
+              <Button
+                className="bg-[#0156FF] px-8 py-4 rounded-[50px] text-white text-sm "
+                onClick={() => dispatch(addCart({ data, compCound }))}
+              >
                 Add to Cart
               </Button>
               <Button className="bg-[#FFB800] px-8 py-4 rounded-[50px] text-white  text-xs flex items-center ml-3">
