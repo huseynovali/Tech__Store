@@ -3,6 +3,7 @@ import Button from "../Buttons/Button";
 import { cardComp } from "../../utils/const";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteCardProduct } from "../../Store/cardReducer";
+import { Link } from "react-router-dom";
 
 function CardHoverSection() {
   const data = useSelector((state) => state.cardReducer.cardProduct);
@@ -79,9 +80,12 @@ function CardHoverSection() {
           <span className="text-[#A2A6B0] text-sm">Subtotal:</span> ${Subtotal}
         </p>
         <div className="buttons flex flex-col justify-center items-center">
-          <Button className="bg-[#0156FF] px-[70px] py-2 rounded-[50px] text-white text-sm mb-2 mt-3">
+          <Link
+            to={"checkout"}
+            className="bg-[#0156FF] px-[70px] py-2 rounded-[50px] text-white text-sm mb-2 mt-3"
+          >
             Go to Checkout
-          </Button>
+          </Link>
           <Button className="bg-[#FFB800] px-[40px] py-2 rounded-[50px] text-white  text-xs flex items-center ">
             Check out with
             <div className="pl-2">
