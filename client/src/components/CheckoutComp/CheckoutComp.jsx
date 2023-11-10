@@ -144,7 +144,7 @@ function CheckoutComp() {
                 </div>
               </Listbox>
             </div>
-            <div className="input__group py-2">
+            <div className="input__group ">
               <label htmlFor="" className="block py-2">
                 Zip/Postal Code <span className="text-red-500">*</span>
               </label>
@@ -218,6 +218,13 @@ function CheckoutComp() {
                   </Transition>
                 </div>
               </Listbox>
+            </div>
+
+            <div className="input__group ">
+              <label htmlFor="" className="block py-2">
+                Phone Number <span className="text-red-500">*</span>
+              </label>
+              <input type="text" className="w-full py-2  border" />
             </div>
           </div>
         </div>
