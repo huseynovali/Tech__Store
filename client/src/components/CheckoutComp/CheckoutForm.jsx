@@ -70,7 +70,7 @@ function CheckoutForm() {
             // Örneğin, formu sunucuya gönderme veya başka bir işlem...
           }}
         >
-          <Form className="form w-[70%]">
+          <Form className="form md:w-[70%]">
             <div className="input__group">
               <label htmlFor="email" className="block py-2">
                 Email Address <span className="text-red-500">*</span>

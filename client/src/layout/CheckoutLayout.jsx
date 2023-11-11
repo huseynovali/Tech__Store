@@ -10,8 +10,8 @@ function CheckoutLayout() {
     .replaceAll("/", " > ")
     .slice(2);
   return (
-    <div className="flex">
-      <div className="left w-[70%] py-3">
+    <div className="md:flex">
+      <div className="left md:w-[70%] py-3">
         <p className="capitalize">{url}</p>
         <div className="flex items-center ">
           <p className="text-lg md:text-4xl font-semibold py-2 md:py-4 align-middle">
@@ -20,9 +20,12 @@ function CheckoutLayout() {
         </div>
         <Outlet />
       </div>
-      <div className="right py-20 px-3 w-[30%]">
-        <CheckStep />
-        <CheckoutCart/>
+      <div className="right py-20 px-3 md:w-[30%]">
+        <div className="hidden md:block">
+          <CheckStep />
+        </div>
+
+        <CheckoutCart />
       </div>
     </div>
   );
