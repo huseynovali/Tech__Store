@@ -9,6 +9,7 @@ function CartComp() {
     .replaceAll("/", " > ")
     .slice(2);
 
+    
   return (
     <div className="py-5">
       <p className="capitalize">{url}</p>
